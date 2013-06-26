@@ -6,4 +6,8 @@ fwrite = open('/home/lijingpeng/test.txt', 'w')
 frw = open('/home/lijingpeng/test.txt', 'r+')
 frb = open('/home/lijingpeng/test.txt', 'rb')
 
-
+# close all the file operater
+fread.close();
+fwrite.close();
+frw.close();
+frb.close();
