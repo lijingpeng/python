@@ -21,7 +21,7 @@ while 1:
     while 1:
         data = tcpCliSoc.recv( BUFSIZE )
         if not data: break
-        print data
+        print datetime.now(), "\n", data
         tcpCliSoc.send("Welcome to the server")
         #tcpCliSoc.send('Welcome to the server! ',time.strftime("%a %b %d %H:%M:%S", time.localtime()))
     tcpCliSoc.close()
