@@ -20,3 +20,16 @@ fread.close();
 # fwrite.close();
 # frw.close();
 # frb.close();
+
+print '---------------Read file end-----------------'
+# write file
+wFilename = '/home/lijingpeng/w.txt'
+fw = open(wFilename, 'w')
+done = 0
+while not done:
+	aLine = raw_input("Enter a line:(.. to quit!)")
+	if aLine != "..":
+		fw.write(aLine + '\n')
+	else:
+		done = 1
+fw.close()
