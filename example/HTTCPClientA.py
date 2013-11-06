@@ -5,7 +5,7 @@ import binascii
 import time
 
 HOST = '219.223.252.170'
-PORT = 6010
+PORT = 6000
 BUFSIZE = 307
 ADDR = (HOST, PORT)
 

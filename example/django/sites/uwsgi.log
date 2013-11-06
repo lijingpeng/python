@@ -1,0 +1,146 @@
+*** Starting uWSGI 1.2.3-debian (32bit) on [Sun Sep  1 15:38:52 2013] ***
+compiled with version: 4.7.2 on 07 November 2012 02:13:49
+detected number of CPU cores: 4
+current working directory: /home/lijingpeng/Program/python/example/django/sites
+writing pidfile to /home/lijingpeng/Program/python/example/django/sites/uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+The -s/--socket option is missing and stdin is not a socket.
+*** Starting uWSGI 1.2.3-debian (32bit) on [Sun Sep  1 15:40:45 2013] ***
+compiled with version: 4.7.2 on 07 November 2012 02:13:49
+detected number of CPU cores: 4
+current working directory: /home/lijingpeng/Program/python/example/django/sites
+writing pidfile to /home/lijingpeng/Program/python/example/django/sites/uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to TCP address :8000 fd 3
+your server socket listen backlog is limited to 120 connections
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12048)
+spawned uWSGI worker 1 (pid: 12050, cores: 1)
+spawned uWSGI worker 2 (pid: 12051, cores: 1)
+spawned uWSGI worker 3 (pid: 12052, cores: 1)
+spawned uWSGI worker 4 (pid: 12053, cores: 1)
+spawned uWSGI worker 5 (pid: 12055, cores: 1)
+spawned uWSGI worker 6 (pid: 12056, cores: 1)
+spawned uWSGI worker 7 (pid: 12057, cores: 1)
+spawned uWSGI worker 8 (pid: 12058, cores: 1)
+timeout. skip request.
+timeout. skip request.
+timeout. skip request.
+timeout. skip request.
+*** Starting uWSGI 1.2.3-debian (32bit) on [Sun Sep  1 15:44:34 2013] ***
+compiled with version: 4.7.2 on 07 November 2012 02:13:49
+detected number of CPU cores: 4
+current working directory: /home/lijingpeng/Program/python/example/django/sites
+writing pidfile to /home/lijingpeng/Program/python/example/django/sites/uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+probably another instance of uWSGI is running on the same address.
+bind(): Address already in use [socket.c line 745]
+Sun Sep  1 15:45:49 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 15:45:49 2013 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.2.3-debian (32bit) on [Sun Sep  1 15:46:23 2013] ***
+compiled with version: 4.7.2 on 07 November 2012 02:13:49
+detected number of CPU cores: 4
+current working directory: /home/lijingpeng/Program/python/example/django/sites
+writing pidfile to /home/lijingpeng/Program/python/example/django/sites/uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to TCP address :8000 fd 3
+your server socket listen backlog is limited to 120 connections
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19132)
+spawned uWSGI worker 1 (pid: 19133, cores: 1)
+spawned uWSGI worker 2 (pid: 19134, cores: 1)
+spawned uWSGI worker 3 (pid: 19135, cores: 1)
+spawned uWSGI worker 4 (pid: 19136, cores: 1)
+spawned uWSGI worker 5 (pid: 19137, cores: 1)
+spawned uWSGI worker 6 (pid: 19138, cores: 1)
+spawned uWSGI worker 7 (pid: 19139, cores: 1)
+spawned uWSGI worker 8 (pid: 19140, cores: 1)
+timeout. skip request.
+timeout. skip request.
+timeout. skip request.
+DAMN ! worker 8 (pid: 19140) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 8 (new pid: 24475)
+DAMN ! worker 7 (pid: 19139) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 7 (new pid: 24697)
+DAMN ! worker 6 (pid: 19138) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 6 (new pid: 24784)
+DAMN ! worker 5 (pid: 19137) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 5 (new pid: 24853)
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+Sun Sep  1 16:04:42 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:04:42 2013 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.2.3-debian (32bit) on [Sun Sep  1 16:24:55 2013] ***
+compiled with version: 4.7.2 on 07 November 2012 02:13:49
+detected number of CPU cores: 4
+current working directory: /home/lijingpeng/Program/python/example/django/sites
+writing pidfile to /home/lijingpeng/Program/python/example/django/sites/uwsgi.pid
+detected binary path: /usr/bin/uwsgi-core
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to TCP address :8000 fd 3
+Python version: 2.7.4 (default, Apr 19 2013, 18:35:44)  [GCC 4.7.3]
+Python main interpreter initialized at 0x95f7350
+threads support enabled
+your server socket listen backlog is limited to 120 connections
+*** Operational MODE: preforking ***
+added /home/lijingpeng/Program/python/example/django/sites/sites/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x95f7350 pid: 4860 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4860)
+spawned uWSGI worker 1 (pid: 4861, cores: 1)
+spawned uWSGI worker 2 (pid: 4862, cores: 1)
+spawned uWSGI worker 3 (pid: 4863, cores: 1)
+spawned uWSGI worker 4 (pid: 4864, cores: 1)
+spawned uWSGI worker 5 (pid: 4865, cores: 1)
+spawned uWSGI worker 6 (pid: 4866, cores: 1)
+spawned uWSGI worker 7 (pid: 4867, cores: 1)
+spawned uWSGI worker 8 (pid: 4868, cores: 1)
+timeout. skip request.
+read(): Resource temporarily unavailable [proto/uwsgi.c line 73]
+Sun Sep  1 16:25:44 2013 - error parsing request
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+[pid: 4865|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 716 bytes} [Sun Sep  1 03:25:54 2013] GET /admin => generated 2255 bytes in 228 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 4865|app: 0|req: 2/2] 127.0.0.1 () {32 vars in 378 bytes} [Sun Sep  1 03:27:16 2013] GET / => generated 2225 bytes in 4 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+Sun Sep  1 03:27:20 2013 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep  1 16:27:20 2013 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!

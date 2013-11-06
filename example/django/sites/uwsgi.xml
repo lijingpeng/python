@@ -1,0 +1,7 @@
+<uwsgi>
+    <socket>127.0.0.1:6000</socket>
+    <chdir>/home/lijingpeng/Program/python/example/django</chdir>
+    <pythonpath>..</pythonpath>
+    <module>django_wsgi</module>
+    <daemonize>/var/log/uwsgi/uwsgi.log</daemonize>
+</uwsgi>
