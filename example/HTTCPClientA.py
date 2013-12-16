@@ -4,7 +4,7 @@ import socket
 import binascii
 import time
 
-HOST = '219.223.252.170'
+HOST = '60.171.106.228'
 PORT = 6000
 BUFSIZE = 307
 ADDR = (HOST, PORT)

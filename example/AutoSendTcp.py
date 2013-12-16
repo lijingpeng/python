@@ -5,8 +5,8 @@ import binascii
 import time
 import random
 
-HOST = '219.223.252.170'
-PORT = 6010
+HOST = '60.171.106.228'
+PORT = 6000
 BUFSIZE = 307
 ADDR = (HOST, PORT)
 
@@ -15,7 +15,7 @@ try:
     tcpCliSoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
     tcpCliSoc.connect(ADDR)
 except socket.error, msg:
-    print 'Socket Error! Create, bind, listen' + str(msg[0] + ', Error message:' + msg[1])
+#    print 'Socket Error! Create, bind, listen' + str(msg[0] + ', Error message:' + msg[1])
     sys.exit()
 except Exception, errcode:
     if errcode[0] == 10035:
