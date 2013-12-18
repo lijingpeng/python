@@ -55,8 +55,9 @@ for logfile in logFiles:
             strTmp = pokers_a[1]
             pokers_b = strTmp.split("/")
             pokers = [pokers_a[0]] + pokers_b
-            print pokers
-
+            dataOutput += "#" + pokers[championIndex]
+            for i in range(2, len(pokers), 1):
+                dataOutput += "|" + pokers[i]
             #print dataPiece[2] # action
             #print dataPiece[3] # poker
             #print dataPiece[4] # pot
