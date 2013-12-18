@@ -4,7 +4,11 @@ __author__ = 'lijingpeng'
 
 import os, shutil
 
-LogFolder = "/home/lijingpeng/Public/ta/"
+# settings
+LogFolder = "/home/lijingpeng/Public/tb/"
+OutputFile = "/home/lijingpeng/Public/annout.txt"
+Champion = "marv"
+
 # store all filename
 logFiles = os.listdir( LogFolder )
 
@@ -19,7 +23,12 @@ for logfile in logFiles:
         if dataLine[0] != "#":
             # main process here
             dataPiece = dataLine.split(":")
-            print dataPiece
+            # STATE:0:rc/crc/crc/crc:Tc6d|Ks5h/QsTs2s/9s/Ah:-70|70:feste_iro|marv
+            print dataPiece[2]
+            print dataPiece[3]
+            print dataPiece[4]
+            print dataPiece[5]
+            # print dataPiece
         dataLine = fread.readline()
 
 print len(logFiles) * 3000
