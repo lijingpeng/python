@@ -1,3 +1,5 @@
+import string
+
 __author__ = 'lijingpeng'
 # Parse log file
 # input: Folder
@@ -24,11 +26,19 @@ for logfile in logFiles:
             # main process here
             dataPiece = dataLine.split(":")
             # STATE:0:rc/crc/crc/crc:Tc6d|Ks5h/QsTs2s/9s/Ah:-70|70:feste_iro|marv
+            # Find the winner
+            winner = dataPiece[4].split("|")
+            winnerIndex = 0
+            if string.atoi( winner[1] ) > 0:
+                winnerIndex = 1 # small blind win
+            else:
+                winnerIndex = 0 # big blind win
+            print "winner ", winnerIndex
             print dataPiece[2]
             print dataPiece[3]
             print dataPiece[4]
             print dataPiece[5]
-            # print dataPiece
+
         dataLine = fread.readline()
 
 print len(logFiles) * 3000
