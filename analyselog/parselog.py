@@ -72,22 +72,32 @@ for logfile in logFiles:
 
             # opponent's action sequence
             oppoActions = ""
+            chmpActions = ""
             listTmp = list(actions[0])
             # the champion is the small blind, he goes first
             for i in range(championIndex,len(listTmp), 2):
                 oppoActions += listTmp[i]
+                if i - 1 >= 0:
+                    chmpActions += listTmp[i - 1]
+
+
             # after pre-flop, the action sequence is changed
             for i in range(1 , len(actions), 1):
                 oppoActions += "|"
+                chmpActions += "|"
                 listTmp = list(actions[i])
                 # the champion is the small blind, he goes first
                 if championIndex == 1:
                     for i in range(0,len(listTmp), 2):
                         oppoActions += listTmp[i]
+                        if i + 1 < len(listTmp):
+                            chmpActions += listTmp[i + 1]
                 else:
                     for i in range(1,len(listTmp), 2):
                         oppoActions += listTmp[i]
+                        chmpActions += listTmp[i - 1]
 
+            print '.......', chmpActions
             # Store all the opponent's actions
             dataOutput += oppoActions
 
