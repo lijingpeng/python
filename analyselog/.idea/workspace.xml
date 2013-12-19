@@ -4,8 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="25" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parselog.py" afterPath="$PROJECT_DIR$/parselog.py" />
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="read file">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="analyselog.iws" />
@@ -29,10 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parselog.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parselog.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parselog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="145" selection-end="145" vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="2318">
+            <state line="23" column="18" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/anninput.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.5246548" vertical-offset="399" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -66,6 +75,7 @@
         <option value="$PROJECT_DIR$/getlogfile.py" />
         <option value="$PROJECT_DIR$/getspecificoppologfile.py" />
         <option value="$PROJECT_DIR$/parselog.py" />
+        <option value="$PROJECT_DIR$/anninput.py" />
       </list>
     </option>
   </component>
@@ -141,7 +151,7 @@
       </PyConsoleSettings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parselog">
+  <component name="RunManager" selected="Python.anninput">
     <configuration default="false" name="neuralabtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,6 +205,24 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="anninput" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="analyselog" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anninput.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -337,17 +365,19 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.getlogfile" />
       <item index="1" class="java.lang.String" itemvalue="Python.neuralabtest" />
       <item index="2" class="java.lang.String" itemvalue="Python.test" />
       <item index="3" class="java.lang.String" itemvalue="Python.parselog" />
+      <item index="4" class="java.lang.String" itemvalue="Python.anninput" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.parselog" />
-        <item index="1" class="java.lang.String" itemvalue="Python.neuralabtest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.anninput" />
+        <item index="1" class="java.lang.String" itemvalue="Python.parselog" />
+        <item index="2" class="java.lang.String" itemvalue="Python.neuralabtest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +437,23 @@
       <created>1387417232937</created>
       <updated>1387417232937</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pre-parsing1">
+      <created>1387419330837</created>
+      <updated>1387419330837</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add anninput">
+      <created>1387420932311</created>
+      <updated>1387420932311</updated>
+    </task>
+    <task id="LOCAL-00011" summary="read file">
+      <created>1387421403424</created>
+      <updated>1387421403424</updated>
+    </task>
+    <task id="LOCAL-00012" summary="read file">
+      <created>1387422073301</created>
+      <updated>1387422073302</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -435,16 +481,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12844037" sideWeight="0.70541614" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.49964714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945839" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945839" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -466,18 +512,14 @@
     <MESSAGE value="find the winner" />
     <MESSAGE value="get all the pokers into pokers" />
     <MESSAGE value="store opponent actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="store opponent actions" />
+    <MESSAGE value="pre-parsing1" />
+    <MESSAGE value="add anninput" />
+    <MESSAGE value="read file" />
+    <option name="LAST_COMMIT_MESSAGE" value="read file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/parselog.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -520,7 +562,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="145" selection-end="145" vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="2318">
+        <state line="23" column="18" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="2223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anninput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.5246548" vertical-offset="399" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>

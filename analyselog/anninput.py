@@ -6,6 +6,10 @@ __author__ = 'lijingpeng'
 dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 
+# open output file
+fileWriter = open(annDataFile, "w")
+dataOutput = ""
+
 # open data file and processing it
 fileReader = open(dataFile)
 dataLine = fileReader.readline()
@@ -22,7 +26,28 @@ while dataLine and lineCount < 10:
     #7#0#0#Qd7c|4h9s8s|4s#rc/cc/crf#r|c|r
     #8#1#0#Th2h|Ad4d3d|8d#rc/crrc/rf#c|cr|r
     #9#0#0#QhJd|5hAs6c|Tc|Th#rc/crc/crc/crc#r|r|r|r
-    print dataLine
+    dataLine = dataLine.strip("\n")
+    dataPiece = dataLine.split("#")
+
+    # different stage
+    stages = dataPiece[4].split("/")
+    roundCount = len(stages)
+    for i in range(0, roundCount, 1): # i will be 0,1,2,3; 0 will be valid, while 1,2,3 depends
+
+
+    # stages
+    FLOP = 0
+    TURN = 0
+    RIVER = 0
+    # pre-flop stage, FLOP = 0, TURN = 0, RIVER = 0
+
+    # flop stage
+
+    # turn stage
+
+    # river stage
+
+    print dataPiece
     dataLine = fileReader.readline()
     lineCount += 1
     pass
