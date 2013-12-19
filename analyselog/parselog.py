@@ -102,11 +102,6 @@ for logfile in logFiles:
             # Store all the opponent's actions
             dataOutput += oppoActions
 
-            #print dataPiece[2] # action
-            #print dataPiece[3] # poker
-            #print dataPiece[4] # pot
-            #print dataPiece[5] # opponent
-
             dataOutput += "\n"
             fwrite.write(dataOutput)
             dataOutput = ""
