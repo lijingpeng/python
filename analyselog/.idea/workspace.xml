@@ -41,7 +41,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="165" selection-end="178" vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="1501">
+            <state line="20" column="13" selection-start="315" selection-end="324" vertical-scroll-proportion="0.4871795" vertical-offset="133" max-vertical-offset="1501">
               <folding />
             </state>
           </provider>
@@ -457,7 +457,11 @@
       <created>1387436733783</created>
       <updated>1387436733783</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="GetRaiseCount">
+      <created>1387437491330</created>
+      <updated>1387437491330</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -493,7 +497,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.49964714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945839" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945839" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945839" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -520,7 +524,8 @@
     <MESSAGE value="add anninput" />
     <MESSAGE value="read file" />
     <MESSAGE value="stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="stage" />
+    <MESSAGE value="GetRaiseCount" />
+    <option name="LAST_COMMIT_MESSAGE" value="GetRaiseCount" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="165" selection-end="178" vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="1501">
+        <state line="20" column="13" selection-start="315" selection-end="324" vertical-scroll-proportion="0.4871795" vertical-offset="133" max-vertical-offset="1501">
           <folding />
         </state>
       </provider>
