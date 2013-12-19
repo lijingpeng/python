@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="25" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="read file">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,7 +41,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.5246548" vertical-offset="399" max-vertical-offset="1140">
+            <state line="9" column="17" selection-start="165" selection-end="178" vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="1501">
               <folding />
             </state>
           </provider>
@@ -453,7 +453,11 @@
       <created>1387422073301</created>
       <updated>1387422073302</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="stage">
+      <created>1387436733783</created>
+      <updated>1387436733783</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -515,7 +519,8 @@
     <MESSAGE value="pre-parsing1" />
     <MESSAGE value="add anninput" />
     <MESSAGE value="read file" />
-    <option name="LAST_COMMIT_MESSAGE" value="read file" />
+    <MESSAGE value="stage" />
+    <option name="LAST_COMMIT_MESSAGE" value="stage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,7 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.5246548" vertical-offset="399" max-vertical-offset="1140">
+        <state line="9" column="17" selection-start="165" selection-end="178" vertical-scroll-proportion="0.3372781" vertical-offset="0" max-vertical-offset="1501">
           <folding />
         </state>
       </provider>

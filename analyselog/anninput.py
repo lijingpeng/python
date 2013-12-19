@@ -6,6 +6,17 @@ __author__ = 'lijingpeng'
 dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 
+
+def GetRaiseCount(opActions):
+    Count = 0
+    for i in opActions:
+        if i == "r":
+            Count += 1
+    pass
+
+    return Count
+    pass
+
 # open output file
 fileWriter = open(annDataFile, "w")
 dataOutput = ""
@@ -30,15 +41,23 @@ while dataLine and lineCount < 10:
     dataPiece = dataLine.split("#")
 
     # different stage
-    stages = dataPiece[4].split("/")
+    stages = dataPiece[4].split("/")    # All action sequence
+    opStages = dataPiece[5].split("|")  # opponent's action sequence
     roundCount = len(stages)
-    for i in range(0, roundCount, 1): # i will be 0,1,2,3; 0 will be valid, while 1,2,3 depends
-
-
-    # stages
     FLOP = 0
     TURN = 0
     RIVER = 0
+    OP_RAISE_COUNT = 0
+    for i in range(0, roundCount, 1): # i will be 0,1,2,3; 0 will be valid, while 1,2,3 depends
+        if i == 0: #stage 1 [pre-flop]
+            FLOP = 0
+            TURN = 0
+            RIVER = 0
+            OP_RAISE_COUNT += GetRaiseCount( [opStages[ i ]] )
+            print "raise", OP_RAISE_COUNT
+        pass
+    pass
+
     # pre-flop stage, FLOP = 0, TURN = 0, RIVER = 0
 
     # flop stage
