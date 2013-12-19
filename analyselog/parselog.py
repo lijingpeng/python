@@ -7,7 +7,7 @@ __author__ = 'lijingpeng'
 import os, shutil
 
 # settings
-LogFolder = "/home/lijingpeng/Public/tb/"
+LogFolder = "/home/lijingpeng/Public/tmp/"
 OutputFile = "/home/lijingpeng/Public/annout.txt"
 Champion = "marv"
 
@@ -26,7 +26,7 @@ for logfile in logFiles:
     fread = open( LogFolder + logfile )
     lineCount = 0
     dataLine = fread.readline()
-    while dataLine:
+    while dataLine and lineCount < 3000:
         if dataLine[0] != "#":
             lineCount += 1
             dataOutput += str(lineCount) + "#"
@@ -55,6 +55,8 @@ for logfile in logFiles:
             # if the champion is the winner
             if championIndex == winnerIndex:
                 dataOutput += "1"
+            else:
+                dataOutput += "0"
             #print "winner ", winnerIndex
 
             # get all the pokers into pokers
@@ -79,7 +81,7 @@ for logfile in logFiles:
                 oppoActions += listTmp[i]
                 if i - 1 >= 0:
                     chmpActions += listTmp[i - 1]
-
+            pass
 
             # after pre-flop, the action sequence is changed
             for i in range(1 , len(actions), 1):
