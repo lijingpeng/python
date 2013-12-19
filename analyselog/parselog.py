@@ -97,7 +97,6 @@ for logfile in logFiles:
                         oppoActions += listTmp[i]
                         chmpActions += listTmp[i - 1]
 
-            print '.......', chmpActions
             # Store all the opponent's actions
             dataOutput += oppoActions
 
