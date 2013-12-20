@@ -7,7 +7,7 @@ __author__ = 'lijingpeng'
 import os, shutil
 
 # settings
-LogFolder = "/home/lijingpeng/Public/tmp/"
+LogFolder = "/home/lijingpeng/Public/tb/"
 OutputFile = "/home/lijingpeng/Public/annout.txt"
 Champion = "marv"
 
@@ -88,16 +88,34 @@ for logfile in logFiles:
                 oppoActions += "|"
                 chmpActions += "|"
                 listTmp = list(actions[i])
+                listOpIndex = []
+                listOpIndexTmp = []
+                for i in range(len(listTmp)):
+                    listOpIndex += [i]
                 # the champion is the small blind, he goes first
                 if championIndex == 1:
                     for i in range(0,len(listTmp), 2):
                         oppoActions += listTmp[i]
-                        if i + 1 < len(listTmp):
-                            chmpActions += listTmp[i + 1]
+                        listOpIndexTmp += [i]
+                    pass
+                    for i in listOpIndexTmp:
+                        listOpIndex.remove(i)
+                    pass
+                    for i in listOpIndex:
+                        chmpActions += listTmp[ i ]
+                    pass
+
                 else:
                     for i in range(1,len(listTmp), 2):
                         oppoActions += listTmp[i]
-                        chmpActions += listTmp[i - 1]
+                        listOpIndexTmp += [i]
+                    pass
+                    for i in listOpIndexTmp:
+                        listOpIndex.remove(i)
+                    pass
+                    for i in listOpIndex:
+                        chmpActions += listTmp[ i ]
+                    pass
 
             # Store all the opponent's actions
             dataOutput += oppoActions
