@@ -76,11 +76,21 @@ for logfile in logFiles:
             oppoActions = ""
             chmpActions = ""
             listTmp = list(actions[0])
+            listOpIndex = []
+            listOpIndexTmp = []
+            for i in range(len(listTmp)):
+                listOpIndex += [i]
+            pass
             # the champion is the small blind, he goes first
             for i in range(championIndex,len(listTmp), 2):
                 oppoActions += listTmp[i]
-                if i - 1 >= 0:
-                    chmpActions += listTmp[i - 1]
+                listOpIndexTmp += [i]
+            pass
+            for i in listOpIndexTmp:
+               listOpIndex.remove(i)
+            pass
+            for i in listOpIndex:
+                chmpActions += listTmp[ i ]
             pass
 
             # after pre-flop, the action sequence is changed
