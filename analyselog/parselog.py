@@ -1,13 +1,12 @@
-import string
-
 __author__ = 'lijingpeng'
 # Parse log file
 # input: Folder
 
 import os, shutil
+import string
 
 # settings
-LogFolder = "/home/lijingpeng/Public/tb/"
+LogFolder = "/home/lijingpeng/Public/tmp/"
 OutputFile = "/home/lijingpeng/Public/annout.txt"
 Champion = "marv"
 
