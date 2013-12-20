@@ -101,7 +101,7 @@ for logfile in logFiles:
 
             # Store all the opponent's actions
             dataOutput += oppoActions
-
+            dataOutput += chmpActions
             dataOutput += "\n"
             fwrite.write(dataOutput)
             dataOutput = ""
