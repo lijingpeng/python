@@ -17,5 +17,7 @@ for path in dataPaths:
     for filename in files:
         if filename.find( opponent ) != -1:
             shutil.copyfile(path + filename, destination + filename)
+    pass
+pass
 
 print "Done."
