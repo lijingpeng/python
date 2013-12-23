@@ -22,6 +22,8 @@ def GetRaiseCount(op_actions):
 # @round : specify pre-flop or not
 # return : [sbTotal, bbTotal]
 def GetStageMoney(actions, round):
+    global sbTotal
+    global bbTotal
     sbTotal = 0
     bbTotal = 0
     raiseUnit = 10
@@ -32,10 +34,8 @@ def GetStageMoney(actions, round):
     pass
 
     if round == 0:  # pre-flop round, small blind goes first
-        global sbTotal
-        sbTotal = 0
-        global bbTotal
-        bbTotal = 5
+        sbTotal = 5
+        bbTotal = 10
         for i in range(len(actions)):
             # 0, 2, 4 for small blind
             # 1, 3 for big blind
@@ -46,32 +46,30 @@ def GetStageMoney(actions, round):
                     bbTotal += abs(bbTotal - sbTotal)
                 pass
             elif actions[i] == "r":
-                if i % 2 == 0: # bb
-                    bbTotal += abs(bbTotal - sbTotal) + raiseUnit
-                else:   # sb
+                if i % 2 == 0: # sb
                     sbTotal += abs(bbTotal - sbTotal) + raiseUnit
+                else:   # bb
+                    bbTotal += abs(bbTotal - sbTotal) + raiseUnit
             else:
                 pass
             pass
         pass
     else: # after pre-flop stage: big blind goes first
-        global sbTotal
         sbTotal = 0
-        global bbTotal
         bbTotal = 0
         for i in range(len(actions)):
             # 0, 2, 4 for big blind
             # 1, 3 for small blind
             if actions[i] == "c":
-                if i % 2 == 0:
+                if i % 2 == 0: # bb
                     bbTotal += abs(bbTotal - sbTotal)
-                else:
+                else:           # sb
                     sbTotal += abs(bbTotal - sbTotal)
                 pass
             elif actions[i] == "r":
-                if i % 2 == 0:
+                if i % 2 == 0:  # bb
                     bbTotal += abs(bbTotal - sbTotal) + raiseUnit
-                else:
+                else:           # sb
                     sbTotal += abs(bbTotal - sbTotal) + raiseUnit
                 pass
             else:
@@ -106,7 +104,7 @@ while dataLine and lineCount < 10:
     #9#0#0#QhJd|5hAs6c|Tc|Th#rc/crc/crc/crc#r|r|r|r
     dataLine = dataLine.strip("\n")
     dataPiece = dataLine.split("#")
-
+    print dataPiece
     # different stage
     stages = dataPiece[4].split("/")    # All action sequence
     opStages = dataPiece[5].split("|")  # opponent's action sequence
@@ -116,8 +114,8 @@ while dataLine and lineCount < 10:
     TURN = 0
     RIVER = 0
     OP_RAISE_COUNT = 0
-    SB_TOTAL = 5            # initial small blind pot money
-    BB_TOTAL = 2 * SB_TOTAL # initial big blind pot money
+    SB_TOTAL = 0 # initial small blind pot money
+    BB_TOTAL = 0 # initial big blind pot money
     POTALL = 15 # the money in the pot till now, once start the game, it is 15
     ME_SB = dataPiece[1] # 0 for big blind, 1 for small blind
     for i in range(0, roundCount, 1): # i will be 0,1,2,3; 0 will be valid, while 1,2,3 depends
@@ -127,12 +125,16 @@ while dataLine and lineCount < 10:
             RIVER = 0
             OP_RAISE_COUNT += GetRaiseCount( [opStages[ i ]] )
             # Calc pot money
+            stagePot = GetStageMoney(list( stages[i] ), 0)
+            SB_TOTAL += stagePot[0]
+            BB_TOTAL += stagePot[1]
+            print SB_TOTAL, BB_TOTAL
 
             print "raise", OP_RAISE_COUNT
         pass
     pass
 
-    print dataPiece
+
     dataLine = fileReader.readline()
     lineCount += 1
     pass
