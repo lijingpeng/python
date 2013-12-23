@@ -18,8 +18,10 @@ def GetRaiseCount(opActions):
     return Count
     pass
 
-
-def GetPotAll(actions, round):
+# get current stage money
+# @actions : current action in specific stage
+# @round : specify pre-flop or not
+def GetStageMoney(actions, round):
     # rc
     if round == 0:  # pre-flop round, small blind goes first
         ;
