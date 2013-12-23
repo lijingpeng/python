@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="GetPotAll">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,7 +43,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="17" selection-start="884" selection-end="884" vertical-scroll-proportion="0.19076306" vertical-offset="684" max-vertical-offset="2413">
+            <state line="23" column="4" selection-start="445" selection-end="458" vertical-scroll-proportion="0.53413653" vertical-offset="171" max-vertical-offset="2755">
               <folding />
             </state>
           </provider>
@@ -516,7 +516,11 @@
       <created>1387770047192</created>
       <updated>1387770047192</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="round == 0 finish">
+      <created>1387770718434</created>
+      <updated>1387770718434</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -660,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="884" selection-end="884" vertical-scroll-proportion="0.19076306" vertical-offset="684" max-vertical-offset="2413">
+        <state line="23" column="4" selection-start="445" selection-end="458" vertical-scroll-proportion="0.53413653" vertical-offset="171" max-vertical-offset="2755">
           <folding />
         </state>
       </provider>

@@ -59,6 +59,24 @@ def GetStageMoney(actions, round):
         sbTotal = 0
         global bbTotal
         bbTotal = 0
+        for i in range(len(actions)):
+            # 0, 2, 4 for big blind
+            # 1, 3 for small blind
+            if actions[i] == "c":
+                if i % 2 == 0:
+                    bbTotal += abs(bbTotal - sbTotal)
+                else:
+                    sbTotal += abs(bbTotal - sbTotal)
+                pass
+            elif actions[i] == "r":
+                if i % 2 == 0:
+                    bbTotal += abs(bbTotal - sbTotal) + raiseUnit
+                else:
+                    sbTotal += abs(bbTotal - sbTotal) + raiseUnit
+                pass
+            else:
+                pass
+        pass
     pass
 
     retVal = []
