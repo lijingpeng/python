@@ -49,7 +49,6 @@ def GetStageMoney(actions, round):
                     bbTotal += abs(bbTotal - sbTotal) + raiseUnit
                 else:   # sb
                     sbTotal += abs(bbTotal - sbTotal) + raiseUnit
-                pass
             else:
                 pass
             pass
@@ -58,6 +57,11 @@ def GetStageMoney(actions, round):
         sbTotal = 0
         bbTotal = 0
     pass
+
+    retVal = []
+    retVal += [ sbTotal ]
+    retVal += [ bbTotal ]
+    return retVal
 
 
 # open output file
