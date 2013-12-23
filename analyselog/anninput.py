@@ -8,21 +8,20 @@ dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 
 
-def GetRaiseCount(opActions):
-    Count = 0
-    for i in opActions:
+def GetRaiseCount(op_actions):
+    count = 0
+    for i in op_actions:
         if i == "r":
-            Count += 1
+            count += 1
     pass
 
-    return Count
-    pass
+    return count
 
 # get current stage money
 # @actions : current action in specific stage
 # @round : specify pre-flop or not
+# return : [sbTotal, bbTotal]
 def GetStageMoney(actions, round):
-    # rc
     sbTotal = 0
     bbTotal = 0
     raiseUnit = 10
@@ -33,9 +32,11 @@ def GetStageMoney(actions, round):
     pass
 
     if round == 0:  # pre-flop round, small blind goes first
+        global sbTotal
         sbTotal = 0
+        global bbTotal
         bbTotal = 5
-        for i in len(actions):
+        for i in range(len(actions)):
             # 0, 2, 4 for small blind
             # 1, 3 for big blind
             if actions[i] == "c": # call
@@ -54,7 +55,9 @@ def GetStageMoney(actions, round):
             pass
         pass
     else: # after pre-flop stage: big blind goes first
+        global sbTotal
         sbTotal = 0
+        global bbTotal
         bbTotal = 0
     pass
 
@@ -63,7 +66,7 @@ def GetStageMoney(actions, round):
     retVal += [ bbTotal ]
     return retVal
 
-
+########## main process here ###########
 # open output file
 fileWriter = open(annDataFile, "w")
 dataOutput = ""
@@ -73,7 +76,6 @@ fileReader = open(dataFile)
 dataLine = fileReader.readline()
 lineCount = 0
 while dataLine and lineCount < 10:
-    # main process here
     #line sb win opokers actions oactions
     #1#0#0#3h8s#rf#r
     #2#1#0#AsTd|QhTs2d|2c|Jc#rc/crrc/rc/rc#c|cr|r|r

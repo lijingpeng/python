@@ -4,8 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parselog.py" afterPath="$PROJECT_DIR$/parselog.py" />
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="GetPotAll">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="analyselog.iws" />
@@ -29,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parselog.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parselog.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parselog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11445783" vertical-offset="0" max-vertical-offset="2736">
+            <state line="126" column="24" selection-start="4248" selection-end="4248" vertical-scroll-proportion="0.0" vertical-offset="1554" max-vertical-offset="2736">
               <folding>
                 <element signature="e#60#77#0" expanded="true" />
               </folding>
@@ -40,10 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anninput.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="20" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1501">
+            <state line="41" column="17" selection-start="884" selection-end="884" vertical-scroll-proportion="0.19076306" vertical-offset="684" max-vertical-offset="2413">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getspecificoppologfile.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
               <folding />
             </state>
           </provider>
@@ -75,9 +84,9 @@
         <option value="$PROJECT_DIR$/neuralabtest.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/getlogfile.py" />
+        <option value="$PROJECT_DIR$/parselog.py" />
         <option value="$PROJECT_DIR$/getspecificoppologfile.py" />
         <option value="$PROJECT_DIR$/anninput.py" />
-        <option value="$PROJECT_DIR$/parselog.py" />
       </list>
     </option>
   </component>
@@ -153,7 +162,7 @@
       </PyConsoleSettings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parselog">
+  <component name="RunManager" selected="Python.anninput">
     <configuration default="false" name="neuralabtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -376,8 +385,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.parselog" />
-        <item index="1" class="java.lang.String" itemvalue="Python.anninput" />
+        <item index="0" class="java.lang.String" itemvalue="Python.anninput" />
+        <item index="1" class="java.lang.String" itemvalue="Python.parselog" />
         <item index="2" class="java.lang.String" itemvalue="Python.neuralabtest" />
         <item index="3" class="java.lang.String" itemvalue="Python.test" />
       </list>
@@ -483,7 +492,31 @@
       <created>1387531250116</created>
       <updated>1387531250116</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="finish">
+      <created>1387531470066</created>
+      <updated>1387531470066</updated>
+    </task>
+    <task id="LOCAL-00021" summary="finish">
+      <created>1387721193139</created>
+      <updated>1387721193139</updated>
+    </task>
+    <task id="LOCAL-00022" summary="GetPotAll">
+      <created>1387766491759</created>
+      <updated>1387766491759</updated>
+    </task>
+    <task id="LOCAL-00023" summary="# get current stage money&#10;# @actions : current action in specific stage&#10;# @round : specify pre-flop or not&#10;def GetStageMoney(actions, round):">
+      <created>1387766617158</created>
+      <updated>1387766617158</updated>
+    </task>
+    <task id="LOCAL-00024" summary="round == 0 finish">
+      <created>1387769861695</created>
+      <updated>1387769861695</updated>
+    </task>
+    <task id="LOCAL-00025" summary="round == 0 finish">
+      <created>1387770047192</created>
+      <updated>1387770047192</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -547,9 +580,11 @@
     <MESSAGE value="read file" />
     <MESSAGE value="stage" />
     <MESSAGE value="GetRaiseCount" />
-    <MESSAGE value="GetPotAll" />
     <MESSAGE value="finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+    <MESSAGE value="GetPotAll" />
+    <MESSAGE value="# get current stage money&#10;# @actions : current action in specific stage&#10;# @round : specify pre-flop or not&#10;def GetStageMoney(actions, round):" />
+    <MESSAGE value="round == 0 finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="round == 0 finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -602,29 +637,31 @@
         <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1142" column="0" selection-start="47510" selection-end="47588" vertical-scroll-proportion="0.33173078" vertical-offset="20306" max-vertical-offset="27968" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anninput.py">
+    <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="20" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1501">
+        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11445783" vertical-offset="0" max-vertical-offset="2736">
+        <state line="126" column="24" selection-start="4248" selection-end="4248" vertical-scroll-proportion="0.0" vertical-offset="1554" max-vertical-offset="2736">
           <folding>
             <element signature="e#60#77#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anninput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="17" selection-start="884" selection-end="884" vertical-scroll-proportion="0.19076306" vertical-offset="684" max-vertical-offset="2413">
+          <folding />
         </state>
       </provider>
     </entry>
