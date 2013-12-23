@@ -43,7 +43,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="445" selection-end="458" vertical-scroll-proportion="0.53413653" vertical-offset="171" max-vertical-offset="2755">
+            <state line="126" column="12" selection-start="3852" selection-end="3852" vertical-scroll-proportion="0.6566265" vertical-offset="2067" max-vertical-offset="2831">
               <folding />
             </state>
           </provider>
@@ -233,7 +233,9 @@
       <module name="analyselog" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anninput.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -520,7 +522,15 @@
       <created>1387770718434</created>
       <updated>1387770718434</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="GetStageMoney">
+      <created>1387798888338</created>
+      <updated>1387798888338</updated>
+    </task>
+    <task id="LOCAL-00028" summary="GetStageMoney">
+      <created>1387803893730</created>
+      <updated>1387803893730</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -588,11 +598,12 @@
     <MESSAGE value="GetPotAll" />
     <MESSAGE value="# get current stage money&#10;# @actions : current action in specific stage&#10;# @round : specify pre-flop or not&#10;def GetStageMoney(actions, round):" />
     <MESSAGE value="round == 0 finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="round == 0 finish" />
+    <MESSAGE value="GetStageMoney" />
+    <option name="LAST_COMMIT_MESSAGE" value="GetStageMoney" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -664,7 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="445" selection-end="458" vertical-scroll-proportion="0.53413653" vertical-offset="171" max-vertical-offset="2755">
+        <state line="126" column="12" selection-start="3852" selection-end="3852" vertical-scroll-proportion="0.6566265" vertical-offset="2067" max-vertical-offset="2831">
           <folding />
         </state>
       </provider>

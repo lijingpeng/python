@@ -123,9 +123,11 @@ while dataLine and lineCount < 10:
             FLOP = 0
             TURN = 0
             RIVER = 0
+            # for every single action, generate an output
+
             OP_RAISE_COUNT += GetRaiseCount( [opStages[ i ]] )
             # Calc pot money
-            stagePot = GetStageMoney(list( stages[i] ), 0)
+            stagePot = GetStageMoney(list( stages[i] ), i)
             SB_TOTAL += stagePot[0]
             BB_TOTAL += stagePot[1]
             print SB_TOTAL, BB_TOTAL
