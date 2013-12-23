@@ -19,7 +19,12 @@ def GetRaiseCount(opActions):
     pass
 
 
-def GetPotAll(actions, stopIndex):
+def GetPotAll(actions, round):
+    # rc
+    if round == 0:  # pre-flop round, small blind goes first
+        ;
+    else:
+        ;
     pass
 
 
@@ -55,6 +60,8 @@ while dataLine and lineCount < 10:
     TURN = 0
     RIVER = 0
     OP_RAISE_COUNT = 0
+    SB_TOTAL = 5            # initial small blind pot money
+    BB_TOTAL = 2 * SB_TOTAL # initial big blind pot money
     POTALL = 15 # the money in the pot till now, once start the game, it is 15
     ME_SB = dataPiece[1] # 0 for big blind, 1 for small blind
     for i in range(0, roundCount, 1): # i will be 0,1,2,3; 0 will be valid, while 1,2,3 depends
@@ -63,6 +70,8 @@ while dataLine and lineCount < 10:
             TURN = 0
             RIVER = 0
             OP_RAISE_COUNT += GetRaiseCount( [opStages[ i ]] )
+            # Calc pot money
+
             print "raise", OP_RAISE_COUNT
         pass
     pass
