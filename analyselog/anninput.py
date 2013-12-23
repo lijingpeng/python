@@ -23,10 +23,40 @@ def GetRaiseCount(opActions):
 # @round : specify pre-flop or not
 def GetStageMoney(actions, round):
     # rc
-    if round == 0:  # pre-flop round, small blind goes first
-        ;
+    sbTotal = 0
+    bbTotal = 0
+    raiseUnit = 10
+    if round > 1:
+        raiseUnit = 20
     else:
-        ;
+        raiseUnit = 10
+    pass
+
+    if round == 0:  # pre-flop round, small blind goes first
+        sbTotal = 0
+        bbTotal = 5
+        for i in len(actions):
+            # 0, 2, 4 for small blind
+            # 1, 3 for big blind
+            if actions[i] == "c": # call
+                if i % 2 == 0: # sb
+                    sbTotal += abs(bbTotal - sbTotal)
+                else:   # bb
+                    bbTotal += abs(bbTotal - sbTotal)
+                pass
+            elif actions[i] == "r":
+                if i % 2 == 0: # bb
+                    bbTotal += abs(bbTotal - sbTotal) + raiseUnit
+                else:   # sb
+                    sbTotal += abs(bbTotal - sbTotal) + raiseUnit
+                pass
+            else:
+                pass
+            pass
+        pass
+    else: # after pre-flop stage: big blind goes first
+        sbTotal = 0
+        bbTotal = 0
     pass
 
 
