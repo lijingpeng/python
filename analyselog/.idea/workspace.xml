@@ -43,7 +43,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="12" selection-start="3852" selection-end="3852" vertical-scroll-proportion="0.6566265" vertical-offset="2067" max-vertical-offset="2831">
+            <state line="165" column="0" selection-start="5190" selection-end="5190" vertical-scroll-proportion="1.1445783" vertical-offset="2565" max-vertical-offset="3344">
               <folding />
             </state>
           </provider>
@@ -530,7 +530,11 @@
       <created>1387803893730</created>
       <updated>1387803893730</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="GetStageMoney done">
+      <created>1387804462596</created>
+      <updated>1387804462596</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -565,8 +569,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12844037" sideWeight="0.6935271" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.49964714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.15384616" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.84615386" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -599,7 +603,8 @@
     <MESSAGE value="# get current stage money&#10;# @actions : current action in specific stage&#10;# @round : specify pre-flop or not&#10;def GetStageMoney(actions, round):" />
     <MESSAGE value="round == 0 finish" />
     <MESSAGE value="GetStageMoney" />
-    <option name="LAST_COMMIT_MESSAGE" value="GetStageMoney" />
+    <MESSAGE value="GetStageMoney done" />
+    <option name="LAST_COMMIT_MESSAGE" value="GetStageMoney done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -675,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="12" selection-start="3852" selection-end="3852" vertical-scroll-proportion="0.6566265" vertical-offset="2067" max-vertical-offset="2831">
+        <state line="165" column="0" selection-start="5190" selection-end="5190" vertical-scroll-proportion="1.1445783" vertical-offset="2565" max-vertical-offset="3344">
           <folding />
         </state>
       </provider>

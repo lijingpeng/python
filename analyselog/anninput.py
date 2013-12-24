@@ -17,6 +17,20 @@ def GetRaiseCount(op_actions):
 
     return count
 
+def GetRaiseCountStage(actions, index, op_index):
+    count = 0
+    startIndex = 0
+    if op_index == 0:
+        startIndex = 0
+    else:
+        startIndex = 1
+    for i in range(startIndex, index, 2):
+        if actions[i] == "r":
+            count += 1
+    pass
+
+    return count
+
 # get current stage money
 # @actions : current action in specific stage
 # @round : specify pre-flop or not
@@ -124,7 +138,20 @@ while dataLine and lineCount < 10:
             TURN = 0
             RIVER = 0
             # for every single action, generate an output
-
+            if dataPiece[0] == "0": # i am big blind, he goes first
+                currentActions = list(stages[0])
+                acTmp = []
+                for j in range(len(stages[i])):
+                    acTmp += currentActions[j]
+                    dataOutput = ""
+                    dataOutput += str(FLOP)             # 1. FLOP
+                    dataOutput += str(TURN)             # 2. TURN
+                    dataOutput += str(RIVER)            # 3. RIVER
+                    dataOutput += str( GetRaiseCountStage(stages[i], 0, 0) )    # 4. until now, opponent raise count
+                    sb_bb = GetStageMoney(acTmp, 0)
+                pass
+            else:                   # i am small blind
+                pass
             OP_RAISE_COUNT += GetRaiseCount( [opStages[ i ]] )
             # Calc pot money
             stagePot = GetStageMoney(list( stages[i] ), i)
