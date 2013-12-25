@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="before dict">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="1225">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,7 +32,7 @@
       <file leaf-file-name="parselog.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parselog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="24" selection-start="4248" selection-end="4248" vertical-scroll-proportion="0.0" vertical-offset="1554" max-vertical-offset="2736">
+            <state line="48" column="13" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="2736">
               <folding>
                 <element signature="e#60#77#0" expanded="true" />
               </folding>
@@ -43,7 +43,20 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="21" selection-start="4333" selection-end="4333" vertical-scroll-proportion="5.3493977" vertical-offset="338" max-vertical-offset="4598">
+            <state line="189" column="16" selection-start="5146" selection-end="5550" vertical-scroll-proportion="0.22891566" vertical-offset="1995" max-vertical-offset="4047">
+              <folding>
+                <element signature="e#197#302#0" expanded="false" />
+                <element signature="e#358#586#0" expanded="false" />
+                <element signature="e#2398#4165#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="neuralabtest.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/neuralabtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -52,7 +65,7 @@
       <file leaf-file-name="a" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="3" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+            <state line="6" column="4" selection-start="252" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
               <folding />
             </state>
           </provider>
@@ -548,7 +561,11 @@
       <created>1387854706293</created>
       <updated>1387854706293</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="1225">
+      <created>1387934343683</created>
+      <updated>1387934343683</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -581,7 +598,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12844037" sideWeight="0.6935271" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.49964714" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.89343685" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.15384616" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.84615386" order="2" side_tool="false" content_ui="tabs" />
@@ -619,18 +636,19 @@
     <MESSAGE value="GetStageMoney" />
     <MESSAGE value="GetStageMoney done" />
     <MESSAGE value="before dict" />
-    <option name="LAST_COMMIT_MESSAGE" value="before dict" />
+    <MESSAGE value="1225" />
+    <option name="LAST_COMMIT_MESSAGE" value="1225" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>182</line>
+          <line>232</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -646,7 +664,11 @@
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1501">
-          <folding />
+          <folding>
+            <element signature="e#197#302#0" expanded="false" />
+            <element signature="e#358#586#0" expanded="false" />
+            <element signature="e#2398#4165#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,11 +691,6 @@
         <state line="2" column="16" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="874" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152" />
@@ -684,9 +701,23 @@
         <state line="1142" column="0" selection-start="47510" selection-end="47588" vertical-scroll-proportion="0.33173078" vertical-offset="20306" max-vertical-offset="27968" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="24" selection-start="4248" selection-end="4248" vertical-scroll-proportion="0.0" vertical-offset="1554" max-vertical-offset="2736">
+        <state line="48" column="13" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="2736">
           <folding>
             <element signature="e#60#77#0" expanded="true" />
           </folding>
@@ -695,22 +726,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/a">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="3" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+        <state line="6" column="4" selection-start="252" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="21" selection-start="4333" selection-end="4333" vertical-scroll-proportion="5.3493977" vertical-offset="338" max-vertical-offset="4598">
-          <folding />
+        <state line="189" column="16" selection-start="5146" selection-end="5550" vertical-scroll-proportion="0.22891566" vertical-offset="1995" max-vertical-offset="4047">
+          <folding>
+            <element signature="e#197#302#0" expanded="false" />
+            <element signature="e#358#586#0" expanded="false" />
+            <element signature="e#2398#4165#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

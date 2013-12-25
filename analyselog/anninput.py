@@ -31,6 +31,60 @@ def GetRaiseCountStage(actions, index, op_index):
 
     return count
 
+def GetRaiseCallCount(actions, opsmallorbig, stage):
+    callCount = 0
+    raiseCount = 0
+    if opsmallorbig == 0: # op is big, 1,3 | 0 , 2
+        for i in range(len(actions)):
+            if stage == 0: # pre-flop, me goes first
+                if i % 2 != 0:
+                    if actions[i] == "r":
+                        raiseCount += 1
+                    elif actions[i] == "c":
+                        callCount += 1
+                    else:
+                        pass
+                pass
+            else:
+                if i % 2 == 0:
+                    if actions[i] == "r":
+                        raiseCount += 1
+                    elif actions[i] == "c":
+                        callCount += 1
+                    else:
+                        pass
+                pass
+            pass
+        pass
+    else:# op is small,  0 , 2 | 1,3
+        for i in range(len(actions)):
+            if stage == 0: # pre-flop, op goes first
+                if i % 2 == 0:
+                    if actions[i] == "r":
+                        raiseCount += 1
+                    elif actions[i] == "c":
+                        callCount += 1
+                    else:
+                        pass
+                pass
+            else:
+                if i % 2 != 0:
+                    if actions[i] == "r":
+                        raiseCount += 1
+                    elif actions[i] == "c":
+                        callCount += 1
+                    else:
+                        pass
+                pass
+            pass
+        pass
+
+    retVal = []
+    retVal += [raiseCount]
+    retVal += [callCount]
+    return retVal
+
+
 # get current stage money
 # @actions : current action in specific stage
 # @round : specify pre-flop or not
@@ -120,65 +174,61 @@ while dataLine and lineCount < 10:
     print "org:", dataPiece
 
     index = 0
-    PreFlopLen = len(actionSet[0])
-    SB_TillNow = {}
-    BB_TillNow = {}
-    PotTillNow = {}
-    OpRaiseCount = {}
-    Op_CallCount = {}
-    ### initialize dict
-    for ac in actionSet:
-        for acl in list(ac):
-            if acl == "r":
-                OpRaiseCount[index] = 1
-                Op_CallCount[index] = 0
-            elif acl == "c":
-                Op_CallCount[index] = 1
-                OpRaiseCount[index] = 0
-            else:
-                OpRaiseCount[index] = 0
-                Op_CallCount[index] = 0
-            pass
-            PotTillNow[index] = 15
-            if index == 0:
-                SB_TillNow[index] = 5
-                BB_TillNow[index] = 10
-            else:
-                SB_TillNow[index] = 0
-                BB_TillNow[index] = 0
-            index += 1
-        pass
-    pass
+    FLOP = 0
+    TURN = 0
+    RIVER = 0 #
+    OpRaiseCount = 0
+    OpCallCount = 0
+    SB_TillNow = 0
+    BB_TillNow = 0
+    AllTillNow = SB_TillNow + BB_TillNow
+    LastAction = ""
 
-    for i in range(len(OpRaiseCount)):
-        if i < PreFlopLen:          #######pre-flop
-            if dataPiece[1] == "0": ## I am big blind, 0, 2, 4 are opponent
-                if index % 2 != 0:
-                    OpRaiseCount[index] = 0
-                    Op_CallCount[index] = 0
-                else:
-                    pass
-            else:                   ## I am small blind, 1, 3, 5 are opponent
-                if index % 2 == 0:
-                    OpRaiseCount[index] = 0
-                    Op_CallCount[index] = 0
-                else:
-                    pass
-            pass
-        else:                       #######pre-flop
-            if dataPiece[1] == "0": ## I am big blind, 1, 3, 5 are opponent
-                if index % 2 == 0:
-                    OpRaiseCount[index] = 0
-                    Op_CallCount[index] = 0
-                else:
-                    pass
-            else:                   ## I am small blind, 0, 2, 4 are opponent
-                if index % 2 != 0:
-                    OpRaiseCount[index] = 0
-                    Op_CallCount[index] = 0
-                else:
-                    pass
-            pass
+    if dataPiece[1] == "1": # i am small
+        for i in range(len(actionSet[0])):
+            if i % 2 == 0: # "me"
+                SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)
+                SB_TillNow = SB_BB[0]
+                BB_TillNow = SB_BB[1]
+                AllTillNow = SB_TillNow + BB_TillNow
+                FLOP = 0
+                TURN = 0
+                RIVER = 0
+                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)
+                OpRaiseCount = RA_CA[0]
+                OpCallCount = RA_CA[1]
+    else:                   # i am big
+        for i in range(len(actionSet[0])):
+            if i % 2 != 0: # "me"
+                SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)
+                SB_TillNow = SB_BB[0]
+                BB_TillNow = SB_BB[1]
+                AllTillNow = SB_TillNow + BB_TillNow
+                FLOP = 0
+                TURN = 0
+                RIVER = 0
+                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)
+                OpRaiseCount = RA_CA[0]
+                OpCallCount = RA_CA[1]
+
+    #PreFlopLen = len(actionSet[0])
+    #SB_TillNow = {}
+    #BB_TillNow = {}
+    #PotTillNow = {}
+    #### initialize dict
+    #for ac in actionSet:
+    #    for acl in list(ac):
+    #        PotTillNow[index] = 15
+    #        if index == 0:
+    #            SB_TillNow[index] = 5
+    #            BB_TillNow[index] = 10
+    #        else:
+    #            SB_TillNow[index] = 0
+    #            BB_TillNow[index] = 0
+    #        index += 1
+    #    pass
+    #pass
+
     ### calc dict
     #for index in range(0, len(actionSet), 1):
     #    acTmp = list(actionSet[index])
@@ -221,12 +271,11 @@ while dataLine and lineCount < 10:
     #pass
 
 
-    print "OpRaiseCount", OpRaiseCount
-    print "Op_CallCount", Op_CallCount
-    print "PotTillNow", PotTillNow
     print "SB_TillNow", SB_TillNow
     print "BB_TillNow", BB_TillNow
-    print "PotTillNow", PotTillNow
+    print "PotTillNow", AllTillNow
+    print "OpRaiseCount", OpRaiseCount
+    print "OPcallcount", OpCallCount
     print "---------------------------------------"
 
 
