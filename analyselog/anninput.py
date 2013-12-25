@@ -147,7 +147,7 @@ while dataLine and lineCount < 10:
         dataLine = fileReader.readline()
         lineCount += 1
         continue
-    print "org:", dataLine
+    print "org", lineCount, "->", dataLine
 
     index = 0
     FLOP = 0
@@ -277,7 +277,7 @@ while dataLine and lineCount < 10:
                     dataOutput += OpLastAction + spliter
                     dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
-                    print dataOutput
+                    #print dataOutput
                 pass
             pass
 
