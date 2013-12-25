@@ -43,8 +43,11 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.26706827" vertical-offset="38" max-vertical-offset="5624">
-              <folding />
+            <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.624498" vertical-offset="1938" max-vertical-offset="3477">
+              <folding>
+                <element signature="e#230#1804#0" expanded="false" />
+                <element signature="e#1983#3750#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -581,7 +584,11 @@
       <created>1387956707055</created>
       <updated>1387956707055</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="解析完成，差牌力，没有输出">
+      <created>1387956741594</created>
+      <updated>1387956741594</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -664,7 +671,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>238</line>
+          <line>235</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -684,7 +691,10 @@
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1501">
-          <folding />
+          <folding>
+            <element signature="e#230#1804#0" expanded="false" />
+            <element signature="e#1983#3750#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -749,8 +759,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.26706827" vertical-offset="38" max-vertical-offset="5624">
-          <folding />
+        <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.624498" vertical-offset="1938" max-vertical-offset="3477">
+          <folding>
+            <element signature="e#230#1804#0" expanded="false" />
+            <element signature="e#1983#3750#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

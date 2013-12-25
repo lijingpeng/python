@@ -1,13 +1,10 @@
 __author__ = 'lijingpeng'
 
 # Generate ann input
-
-
 # Global data
 dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 spliter = "_"
-
 
 def GetRaiseCallCount(actions, opsmallorbig, stage):
     callCount = 0
