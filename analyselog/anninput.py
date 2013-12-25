@@ -266,9 +266,18 @@ while dataLine and lineCount < 10:
                     SB_BB = GetStageMoney(actionList, 1)
                     TMP_SB = SB_BB[0]
                     TMP_BB = SB_BB[1]
-                    FLOP = 1
-                    TURN = 0
-                    RIVER = 0
+                    if round == 1:
+                        FLOP = 1
+                        TURN = 0
+                        RIVER = 0
+                    elif round == 2:
+                        FLOP = 0
+                        TURN = 1
+                        RIVER = 0
+                    else:
+                        FLOP = 0
+                        TURN = 0
+                        RIVER = 1
                     RA_CA = GetRaiseCallCount(actionList, 0, 1)
                     OpRaiseCount += RA_CA[0]
                     OpCallCount += RA_CA[1]
@@ -297,77 +306,6 @@ while dataLine and lineCount < 10:
             SB_TillNow += SB_BB[0]
             BB_TillNow += SB_BB[1]
             AllTillNow = SB_TillNow + BB_TillNow
-
-
-    #PreFlopLen = len(actionSet[0])
-    #SB_TillNow = {}
-    #BB_TillNow = {}
-    #PotTillNow = {}
-    #### initialize dict
-    #for ac in actionSet:
-    #    for acl in list(ac):
-    #        PotTillNow[index] = 15
-    #        if index == 0:
-    #            SB_TillNow[index] = 5
-    #            BB_TillNow[index] = 10
-    #        else:
-    #            SB_TillNow[index] = 0
-    #            BB_TillNow[index] = 0
-    #        index += 1
-    #    pass
-    #pass
-
-    ### calc dict
-    #for index in range(0, len(actionSet), 1):
-    #    acTmp = list(actionSet[index])
-    #    if index == 0: ########################################pre-flop
-    #        if dataPiece[1] == "0": ###### I am big blind, 0, 2, 4 are opponent
-    #            if acTmp[index] == "r" and index % 2 == 0:
-    #                OpRaiseCount[index] = 1
-    #            elif acTmp[index] == "c" and index % 2 == 0:
-    #                Op_CallCount[index] = 1
-    #            else:
-    #                pass
-    #        else:                   ###### I am small blind, 1, 3, 5 are opponent
-    #            if acTmp[index] == "r" and index % 2 != 0:
-    #                OpRaiseCount[index] = 1
-    #            elif acTmp[index] == "c" and index % 2 != 0:
-    #                Op_CallCount[index] = 1
-    #            else:
-    #                pass
-
-    #for index in range(len(actionSequence)):
-    #    if index < PosList[0]:  ############## Pre-flop stage
-
-    #    else:               ############## after Pre-flop stage
-    #        if dataPiece[1] == "0": ###### I am big blind, 0, 2, 4 are opponent
-    #            if actionSequence[index] == "r" and index % 2 == 0:
-    #                OpRaiseCount[index] = 1
-    #            elif actionSequence[index] == "c" and index % 2 == 0:
-    #                Op_CallCount[index] = 1
-    #            else:
-    #                pass
-    #        else:                   ###### I am small blind, 1, 3, 5 are opponent
-    #            if actionSequence[index] == "r" and index % 2 != 0:
-    #                OpRaiseCount[index] = 1
-    #            elif actionSequence[index] == "c" and index % 2 != 0:
-    #                Op_CallCount[index] = 1
-    #            else:
-    #                pass
-    #        pass
-    #    pass
-    #pass
-
-
-    print "SB_TillNow", SB_TillNow
-    print "BB_TillNow", BB_TillNow
-    print "PotTillNow", AllTillNow
-    print "OpRaiseCount", OpRaiseCount
-    print "OPcallcount", OpCallCount
-    print "OpLastAction", OpLastAction
-    print "---------------------------------------"
-
-
 
     dataLine = fileReader.readline()
     lineCount += 1
