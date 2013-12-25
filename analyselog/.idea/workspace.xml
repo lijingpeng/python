@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="before dict">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,7 +43,16 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="0" selection-start="5190" selection-end="5190" vertical-scroll-proportion="1.1445783" vertical-offset="2565" max-vertical-offset="3344">
+            <state line="158" column="21" selection-start="4333" selection-end="4333" vertical-scroll-proportion="5.3493977" vertical-offset="338" max-vertical-offset="4598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="3" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
               <folding />
             </state>
           </provider>
@@ -86,12 +95,13 @@
         <option value="$PROJECT_DIR$/getlogfile.py" />
         <option value="$PROJECT_DIR$/parselog.py" />
         <option value="$PROJECT_DIR$/getspecificoppologfile.py" />
+        <option value="$PROJECT_DIR$/a" />
         <option value="$PROJECT_DIR$/anninput.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1439" />
+    <option name="x" value="-1" />
     <option name="y" value="-5" />
     <option name="width" value="1442" />
     <option name="height" value="906" />
@@ -534,7 +544,11 @@
       <created>1387804462596</created>
       <updated>1387804462596</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="before dict">
+      <created>1387854706293</created>
+      <updated>1387854706293</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -558,7 +572,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1439" y="-5" width="1442" height="906" extended-state="6" />
+    <frame x="-1" y="-5" width="1442" height="906" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -604,11 +618,19 @@
     <MESSAGE value="round == 0 finish" />
     <MESSAGE value="GetStageMoney" />
     <MESSAGE value="GetStageMoney done" />
-    <option name="LAST_COMMIT_MESSAGE" value="GetStageMoney done" />
+    <MESSAGE value="before dict" />
+    <option name="LAST_COMMIT_MESSAGE" value="before dict" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/anninput.py</url>
+          <line>182</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -662,13 +684,6 @@
         <state line="1142" column="0" selection-start="47510" selection-end="47588" vertical-scroll-proportion="0.33173078" vertical-offset="20306" max-vertical-offset="27968" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="126" column="24" selection-start="4248" selection-end="4248" vertical-scroll-proportion="0.0" vertical-offset="1554" max-vertical-offset="2736">
@@ -678,9 +693,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/a">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="3" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="0" selection-start="5190" selection-end="5190" vertical-scroll-proportion="1.1445783" vertical-offset="2565" max-vertical-offset="3344">
+        <state line="158" column="21" selection-start="4333" selection-end="4333" vertical-scroll-proportion="5.3493977" vertical-offset="338" max-vertical-offset="4598">
           <folding />
         </state>
       </provider>
