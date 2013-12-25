@@ -43,7 +43,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.624498" vertical-offset="1938" max-vertical-offset="3477">
+            <state line="207" column="38" selection-start="6696" selection-end="6696" vertical-scroll-proportion="-1.2891567" vertical-offset="2485" max-vertical-offset="3610">
               <folding>
                 <element signature="e#230#1804#0" expanded="false" />
                 <element signature="e#1983#3750#0" expanded="false" />
@@ -588,7 +588,11 @@
       <created>1387956741594</created>
       <updated>1387956741594</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="解析完成，差牌力，没有输出 1.0">
+      <created>1387956835359</created>
+      <updated>1387956835359</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -664,18 +668,24 @@
     <MESSAGE value="6#1#0#Kd4s|Kc6sAd|Ac|9h#rrc/rc/rc/rc#r|r|r|r#rc|c|c|c debugging after pre-flop" />
     <MESSAGE value="money" />
     <MESSAGE value="解析完成，差牌力，没有输出" />
-    <option name="LAST_COMMIT_MESSAGE" value="解析完成，差牌力，没有输出" />
+    <MESSAGE value="解析完成，差牌力，没有输出 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="解析完成，差牌力，没有输出 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>235</line>
+          <line>238</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/anninput.py</url>
+          <line>163</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -759,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.624498" vertical-offset="1938" max-vertical-offset="3477">
+        <state line="207" column="38" selection-start="6696" selection-end="6696" vertical-scroll-proportion="-1.2891567" vertical-offset="2485" max-vertical-offset="3610">
           <folding>
             <element signature="e#230#1804#0" expanded="false" />
             <element signature="e#1983#3750#0" expanded="false" />

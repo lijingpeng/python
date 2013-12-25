@@ -188,7 +188,8 @@ while dataLine and lineCount < 10:
                 dataOutput += str(BB_TillNow) + spliter
                 dataOutput += str(OpRaiseCount) + spliter
                 dataOutput += str(OpCallCount) + spliter
-                dataOutput += OpLastAction + "\n"
+                dataOutput += OpLastAction + spliter
+                dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
     else:                   # i am big, op small
@@ -220,9 +221,11 @@ while dataLine and lineCount < 10:
                 dataOutput += str(BB_TillNow) + spliter
                 dataOutput += str(OpRaiseCount) + spliter
                 dataOutput += str(OpCallCount) + spliter
-                dataOutput += OpLastAction + "\n"
+                dataOutput += OpLastAction + spliter
+                dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
+        pass
     pass
     #########################################################################
     SB_BB = GetStageMoney(actionSet[0], 0)
@@ -271,7 +274,8 @@ while dataLine and lineCount < 10:
                     dataOutput += str(BB_TillNow + TMP_BB) + spliter
                     dataOutput += str(OpRaiseCount) + spliter
                     dataOutput += str(OpCallCount) + spliter
-                    dataOutput += OpLastAction + "\n"
+                    dataOutput += OpLastAction + spliter
+                    dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
                     print dataOutput
                 pass
@@ -281,8 +285,11 @@ while dataLine and lineCount < 10:
             SB_TillNow += SB_BB[0]
             BB_TillNow += SB_BB[1]
             AllTillNow = SB_TillNow + BB_TillNow
+        pass
+    pass
 
     dataLine = fileReader.readline()
     lineCount += 1
+pass # while
 
-print "----------------------------------------------------\nDone."
+print "++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nDone."
