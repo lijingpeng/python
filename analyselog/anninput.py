@@ -4,9 +4,9 @@ __author__ = 'lijingpeng'
 
 
 # Global data
-dataFile = "/home/lijingpeng/Public/annout.txt"
+dataFile = "/home/lijingpeng/Public/a"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
-
+spliter = "_"
 
 def GetRaiseCount(op_actions):
     count = 0
@@ -184,6 +184,7 @@ while dataLine and lineCount < 10:
     AllTillNow = SB_TillNow + BB_TillNow
     OpLastAction = ""
 
+    ######################################################### pre-flop
     if dataPiece[1] == "1": # i am small, op big
         for i in range(len(actionSet[0])):
             if i % 2 == 0: # "me"
@@ -200,6 +201,18 @@ while dataLine and lineCount < 10:
                 OpCallCount = RA_CA[1]
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
+                dataOutput = ""
+                dataOutput += dataPiece[1] + spliter
+                dataOutput += dataPiece[2] + spliter
+                dataOutput += str(FLOP) + spliter
+                dataOutput += str(TURN) + spliter
+                dataOutput += str(RIVER)+ spliter
+                dataOutput += str(SB_TillNow) + spliter
+                dataOutput += str(BB_TillNow) + spliter
+                dataOutput += str(OpRaiseCount) + spliter
+                dataOutput += str(OpCallCount) + spliter
+                dataOutput += OpLastAction
+                #print dataOutput
     else:                   # i am big, op small
         for i in range(len(actionSet[0])):
             if i % 2 != 0: # "me"
@@ -216,29 +229,36 @@ while dataLine and lineCount < 10:
                 OpCallCount = RA_CA[1]
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
+                dataOutput = ""
+                dataOutput += dataPiece[1] + spliter
+                dataOutput += dataPiece[2] + spliter
+                dataOutput += str(FLOP) + spliter
+                dataOutput += str(TURN) + spliter
+                dataOutput += str(RIVER)+ spliter
+                dataOutput += str(SB_TillNow) + spliter
+                dataOutput += str(BB_TillNow) + spliter
+                dataOutput += str(OpRaiseCount) + spliter
+                dataOutput += str(OpCallCount) + spliter
+                dataOutput += OpLastAction
+                #print dataOutput
     pass
     #########################################################################
     SB_BB = GetStageMoney(actionSet[0], 0)
     SB_TillNow = SB_BB[0]
     BB_TillNow = SB_BB[1]
     AllTillNow = SB_TillNow + BB_TillNow
-    print "SB_TillNow", SB_TillNow
-    print "BB_TillNow", BB_TillNow
-    print "PotTillNow", AllTillNow
-    print "OpRaiseCount", OpRaiseCount
-    print "OPcallcount", OpCallCount
-    print "OpLastAction", OpLastAction
-    print "---------------------------------------"
+
 
     if dataPiece[1] == "1": # i am small, op big 0 2
         for round in range(1, len(actionSet), 1): #####ignore pre-flop
             for i in range(len(actionSet[round])):
                 if i % 2 != 0: # "me"
+                    TMP_SB = 0
+                    TMP_BB = 0
                     actionList = list(actionSet[round][:i])
                     SB_BB = GetStageMoney(actionList, 1)
-                    SB_TillNow += SB_BB[0]
-                    BB_TillNow += SB_BB[1]
-                    AllTillNow = SB_TillNow + BB_TillNow
+                    TMP_SB = SB_BB[0]
+                    TMP_BB = SB_BB[1]
                     FLOP = 1
                     TURN = 0
                     RIVER = 0
@@ -247,6 +267,26 @@ while dataLine and lineCount < 10:
                     OpCallCount += RA_CA[1]
                     if i >= 1:
                         OpLastAction = actionList[i - 1]
+                    dataOutput = ""
+                    dataOutput += dataPiece[1] + spliter
+                    dataOutput += dataPiece[2] + spliter
+                    dataOutput += str(FLOP) + spliter
+                    dataOutput += str(TURN) + spliter
+                    dataOutput += str(RIVER)+ spliter
+                    dataOutput += str(SB_TillNow + TMP_SB) + spliter
+                    dataOutput += str(BB_TillNow + TMP_BB) + spliter
+                    dataOutput += str(OpRaiseCount) + spliter
+                    dataOutput += str(OpCallCount) + spliter
+                    dataOutput += OpLastAction
+                    print dataOutput
+                pass
+            pass
+
+            SB_BB = GetStageMoney(actionSet[round], round)
+            SB_TillNow += SB_BB[0]
+            BB_TillNow += SB_BB[1]
+            AllTillNow = SB_TillNow + BB_TillNow
+
 
     #PreFlopLen = len(actionSet[0])
     #SB_TillNow = {}

@@ -43,11 +43,10 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="26" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.62851405" vertical-offset="1492" max-vertical-offset="4769">
+            <state line="287" column="48" selection-start="9501" selection-end="9501" vertical-scroll-proportion="1.0381526" vertical-offset="4575" max-vertical-offset="6650">
               <folding>
-                <element signature="e#197#302#0" expanded="false" />
-                <element signature="e#358#586#0" expanded="false" />
-                <element signature="e#2398#4165#0" expanded="false" />
+                <element signature="e#201#306#0" expanded="false" />
+                <element signature="e#362#590#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -569,7 +568,11 @@
       <created>1387938997458</created>
       <updated>1387938997458</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="6#1#0#Kd4s|Kc6sAd|Ac|9h#rrc/rc/rc/rc#r|r|r|r#rc|c|c|c debugging after pre-flop">
+      <created>1387941695354</created>
+      <updated>1387941695354</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -642,28 +645,24 @@
     <MESSAGE value="before dict" />
     <MESSAGE value="1225" />
     <MESSAGE value="SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)&#10;                SB_TillNow = SB_BB[0]&#10;                BB_TillNow = SB_BB[1]&#10;                AllTillNow = SB_TillNow + BB_TillNow&#10;                FLOP = 0&#10;                TURN = 0&#10;                RIVER = 0&#10;                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)&#10;                OpRaiseCount = RA_CA[0]&#10;                OpCallCount = RA_CA[1]" />
-    <option name="LAST_COMMIT_MESSAGE" value="SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)&#10;                SB_TillNow = SB_BB[0]&#10;                BB_TillNow = SB_BB[1]&#10;                AllTillNow = SB_TillNow + BB_TillNow&#10;                FLOP = 0&#10;                TURN = 0&#10;                RIVER = 0&#10;                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)&#10;                OpRaiseCount = RA_CA[0]&#10;                OpCallCount = RA_CA[1]" />
+    <MESSAGE value="6#1#0#Kd4s|Kc6sAd|Ac|9h#rrc/rc/rc/rc#r|r|r|r#rc|c|c|c debugging after pre-flop" />
+    <option name="LAST_COMMIT_MESSAGE" value="6#1#0#Kd4s|Kc6sAd|Ac|9h#rrc/rc/rc/rc#r|r|r|r#rc|c|c|c debugging after pre-flop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>269</line>
+          <line>309</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>213</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>234</line>
-          <option name="timeStamp" value="12" />
+          <line>253</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -680,9 +679,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1501">
           <folding>
-            <element signature="e#197#302#0" expanded="false" />
-            <element signature="e#358#586#0" expanded="false" />
-            <element signature="e#2398#4165#0" expanded="false" />
+            <element signature="e#201#306#0" expanded="false" />
+            <element signature="e#362#590#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,11 +746,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="26" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.62851405" vertical-offset="1492" max-vertical-offset="4769">
+        <state line="287" column="48" selection-start="9501" selection-end="9501" vertical-scroll-proportion="1.0381526" vertical-offset="4575" max-vertical-offset="6650">
           <folding>
-            <element signature="e#197#302#0" expanded="false" />
-            <element signature="e#358#586#0" expanded="false" />
-            <element signature="e#2398#4165#0" expanded="false" />
+            <element signature="e#201#306#0" expanded="false" />
+            <element signature="e#362#590#0" expanded="false" />
           </folding>
         </state>
       </provider>
