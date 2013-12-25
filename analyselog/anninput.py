@@ -8,28 +8,6 @@ dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 spliter = "_"
 
-def GetRaiseCount(op_actions):
-    count = 0
-    for i in op_actions:
-        if i == "r":
-            count += 1
-    pass
-
-    return count
-
-def GetRaiseCountStage(actions, index, op_index):
-    count = 0
-    startIndex = 0
-    if op_index == 0:
-        startIndex = 0
-    else:
-        startIndex = 1
-    for i in range(startIndex, index, 2):
-        if actions[i] == "r":
-            count += 1
-    pass
-
-    return count
 
 def GetRaiseCallCount(actions, opsmallorbig, stage):
     callCount = 0

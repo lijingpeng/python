@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="money">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,11 +43,8 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="308" column="0" selection-start="10351" selection-end="10351" vertical-scroll-proportion="11.026104" vertical-offset="0" max-vertical-offset="5681">
-              <folding>
-                <element signature="e#210#315#0" expanded="false" />
-                <element signature="e#371#599#0" expanded="false" />
-              </folding>
+            <state line="9" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.26706827" vertical-offset="38" max-vertical-offset="5624">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -580,7 +577,11 @@
       <created>1387956088520</created>
       <updated>1387956088520</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="解析完成，差牌力，没有输出">
+      <created>1387956707055</created>
+      <updated>1387956707055</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -655,14 +656,15 @@
     <MESSAGE value="SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)&#10;                SB_TillNow = SB_BB[0]&#10;                BB_TillNow = SB_BB[1]&#10;                AllTillNow = SB_TillNow + BB_TillNow&#10;                FLOP = 0&#10;                TURN = 0&#10;                RIVER = 0&#10;                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)&#10;                OpRaiseCount = RA_CA[0]&#10;                OpCallCount = RA_CA[1]" />
     <MESSAGE value="6#1#0#Kd4s|Kc6sAd|Ac|9h#rrc/rc/rc/rc#r|r|r|r#rc|c|c|c debugging after pre-flop" />
     <MESSAGE value="money" />
-    <option name="LAST_COMMIT_MESSAGE" value="money" />
+    <MESSAGE value="解析完成，差牌力，没有输出" />
+    <option name="LAST_COMMIT_MESSAGE" value="解析完成，差牌力，没有输出" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>260</line>
+          <line>238</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -682,10 +684,7 @@
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1501">
-          <folding>
-            <element signature="e#210#315#0" expanded="false" />
-            <element signature="e#371#599#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,11 +749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="308" column="0" selection-start="10351" selection-end="10351" vertical-scroll-proportion="11.026104" vertical-offset="0" max-vertical-offset="5681">
-          <folding>
-            <element signature="e#210#315#0" expanded="false" />
-            <element signature="e#371#599#0" expanded="false" />
-          </folding>
+        <state line="9" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.26706827" vertical-offset="38" max-vertical-offset="5624">
+          <folding />
         </state>
       </provider>
     </entry>
