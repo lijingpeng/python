@@ -171,7 +171,7 @@ while dataLine and lineCount < 10:
         dataLine = fileReader.readline()
         lineCount += 1
         continue
-    print "org:", dataPiece
+    print "org:", dataLine
 
     index = 0
     FLOP = 0
@@ -182,24 +182,28 @@ while dataLine and lineCount < 10:
     SB_TillNow = 0
     BB_TillNow = 0
     AllTillNow = SB_TillNow + BB_TillNow
-    LastAction = ""
+    OpLastAction = ""
 
-    if dataPiece[1] == "1": # i am small
+    if dataPiece[1] == "1": # i am small, op big
         for i in range(len(actionSet[0])):
             if i % 2 == 0: # "me"
-                SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)
+                actionList = list(actionSet[0][:i])
+                SB_BB = GetStageMoney(actionList, 0)
                 SB_TillNow = SB_BB[0]
                 BB_TillNow = SB_BB[1]
                 AllTillNow = SB_TillNow + BB_TillNow
                 FLOP = 0
                 TURN = 0
                 RIVER = 0
-                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)
+                RA_CA = GetRaiseCallCount(actionList, 0, 0)
                 OpRaiseCount = RA_CA[0]
                 OpCallCount = RA_CA[1]
-    else:                   # i am big
+                if i >= 1:
+                    OpLastAction = actionList[i - 1]
+    else:                   # i am big, op small
         for i in range(len(actionSet[0])):
             if i % 2 != 0: # "me"
+                actionList = list(actionSet[0][:i])
                 SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)
                 SB_TillNow = SB_BB[0]
                 BB_TillNow = SB_BB[1]
@@ -207,9 +211,42 @@ while dataLine and lineCount < 10:
                 FLOP = 0
                 TURN = 0
                 RIVER = 0
-                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)
+                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 1, 0)
                 OpRaiseCount = RA_CA[0]
                 OpCallCount = RA_CA[1]
+                if i >= 1:
+                    OpLastAction = actionList[i - 1]
+    pass
+    #########################################################################
+    SB_BB = GetStageMoney(actionSet[0], 0)
+    SB_TillNow = SB_BB[0]
+    BB_TillNow = SB_BB[1]
+    AllTillNow = SB_TillNow + BB_TillNow
+    print "SB_TillNow", SB_TillNow
+    print "BB_TillNow", BB_TillNow
+    print "PotTillNow", AllTillNow
+    print "OpRaiseCount", OpRaiseCount
+    print "OPcallcount", OpCallCount
+    print "OpLastAction", OpLastAction
+    print "---------------------------------------"
+
+    if dataPiece[1] == "1": # i am small, op big 0 2
+        for round in range(1, len(actionSet), 1): #####ignore pre-flop
+            for i in range(len(actionSet[round])):
+                if i % 2 != 0: # "me"
+                    actionList = list(actionSet[round][:i])
+                    SB_BB = GetStageMoney(actionList, 1)
+                    SB_TillNow += SB_BB[0]
+                    BB_TillNow += SB_BB[1]
+                    AllTillNow = SB_TillNow + BB_TillNow
+                    FLOP = 1
+                    TURN = 0
+                    RIVER = 0
+                    RA_CA = GetRaiseCallCount(actionList, 0, 1)
+                    OpRaiseCount += RA_CA[0]
+                    OpCallCount += RA_CA[1]
+                    if i >= 1:
+                        OpLastAction = actionList[i - 1]
 
     #PreFlopLen = len(actionSet[0])
     #SB_TillNow = {}
@@ -276,6 +313,7 @@ while dataLine and lineCount < 10:
     print "PotTillNow", AllTillNow
     print "OpRaiseCount", OpRaiseCount
     print "OPcallcount", OpCallCount
+    print "OpLastAction", OpLastAction
     print "---------------------------------------"
 
 

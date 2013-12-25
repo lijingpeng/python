@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="1225">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,7 +43,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="16" selection-start="5146" selection-end="5550" vertical-scroll-proportion="0.22891566" vertical-offset="1995" max-vertical-offset="4047">
+            <state line="173" column="26" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.62851405" vertical-offset="1492" max-vertical-offset="4769">
               <folding>
                 <element signature="e#197#302#0" expanded="false" />
                 <element signature="e#358#586#0" expanded="false" />
@@ -565,7 +565,11 @@
       <created>1387934343683</created>
       <updated>1387934343683</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)&#10;                SB_TillNow = SB_BB[0]&#10;                BB_TillNow = SB_BB[1]&#10;                AllTillNow = SB_TillNow + BB_TillNow&#10;                FLOP = 0&#10;                TURN = 0&#10;                RIVER = 0&#10;                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)&#10;                OpRaiseCount = RA_CA[0]&#10;                OpCallCount = RA_CA[1]">
+      <created>1387938997458</created>
+      <updated>1387938997458</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -590,19 +594,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-5" width="1442" height="906" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12844037" sideWeight="0.6935271" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.89343685" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.15384616" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.84615386" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.15384616" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.84615386" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -637,18 +641,29 @@
     <MESSAGE value="GetStageMoney done" />
     <MESSAGE value="before dict" />
     <MESSAGE value="1225" />
-    <option name="LAST_COMMIT_MESSAGE" value="1225" />
+    <MESSAGE value="SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)&#10;                SB_TillNow = SB_BB[0]&#10;                BB_TillNow = SB_BB[1]&#10;                AllTillNow = SB_TillNow + BB_TillNow&#10;                FLOP = 0&#10;                TURN = 0&#10;                RIVER = 0&#10;                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)&#10;                OpRaiseCount = RA_CA[0]&#10;                OpCallCount = RA_CA[1]" />
+    <option name="LAST_COMMIT_MESSAGE" value="SB_BB = GetStageMoney(list(actionSet[0][:i]), 0)&#10;                SB_TillNow = SB_BB[0]&#10;                BB_TillNow = SB_BB[1]&#10;                AllTillNow = SB_TillNow + BB_TillNow&#10;                FLOP = 0&#10;                TURN = 0&#10;                RIVER = 0&#10;                RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 0, 0)&#10;                OpRaiseCount = RA_CA[0]&#10;                OpCallCount = RA_CA[1]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>232</line>
+          <line>269</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/anninput.py</url>
+          <line>213</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/anninput.py</url>
+          <line>234</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -733,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="16" selection-start="5146" selection-end="5550" vertical-scroll-proportion="0.22891566" vertical-offset="1995" max-vertical-offset="4047">
+        <state line="173" column="26" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.62851405" vertical-offset="1492" max-vertical-offset="4769">
           <folding>
             <element signature="e#197#302#0" expanded="false" />
             <element signature="e#358#586#0" expanded="false" />
