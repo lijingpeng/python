@@ -4,7 +4,7 @@ __author__ = 'lijingpeng'
 
 
 # Global data
-dataFile = "/home/lijingpeng/Public/a"
+dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 spliter = "_"
 
@@ -159,6 +159,7 @@ dataOutput = ""
 fileReader = open(dataFile)
 dataLine = fileReader.readline()
 lineCount = 0
+lineCountOut = 1
 
 while dataLine and lineCount < 10:
     #line sb win opokers actions oactions
@@ -181,7 +182,6 @@ while dataLine and lineCount < 10:
     OpCallCount = 0
     SB_TillNow = 0
     BB_TillNow = 0
-    AllTillNow = SB_TillNow + BB_TillNow
     OpLastAction = ""
 
     ######################################################### pre-flop
@@ -192,7 +192,6 @@ while dataLine and lineCount < 10:
                 SB_BB = GetStageMoney(actionList, 0)
                 SB_TillNow = SB_BB[0]
                 BB_TillNow = SB_BB[1]
-                AllTillNow = SB_TillNow + BB_TillNow
                 FLOP = 0
                 TURN = 0
                 RIVER = 0
@@ -202,6 +201,9 @@ while dataLine and lineCount < 10:
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
                 dataOutput = ""
+                dataOutput += str(lineCountOut) + spliter
+                lineCountOut += 1
+                dataOutput += dataPiece[0] + spliter
                 dataOutput += dataPiece[1] + spliter
                 dataOutput += dataPiece[2] + spliter
                 dataOutput += str(FLOP) + spliter
@@ -211,7 +213,8 @@ while dataLine and lineCount < 10:
                 dataOutput += str(BB_TillNow) + spliter
                 dataOutput += str(OpRaiseCount) + spliter
                 dataOutput += str(OpCallCount) + spliter
-                dataOutput += OpLastAction
+                dataOutput += OpLastAction + "\n"
+                fileWriter.write(dataOutput)
                 #print dataOutput
     else:                   # i am big, op small
         for i in range(len(actionSet[0])):
@@ -230,6 +233,9 @@ while dataLine and lineCount < 10:
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
                 dataOutput = ""
+                dataOutput += str(lineCountOut) + spliter
+                lineCountOut += 1
+                dataOutput += dataPiece[0] + spliter
                 dataOutput += dataPiece[1] + spliter
                 dataOutput += dataPiece[2] + spliter
                 dataOutput += str(FLOP) + spliter
@@ -239,7 +245,8 @@ while dataLine and lineCount < 10:
                 dataOutput += str(BB_TillNow) + spliter
                 dataOutput += str(OpRaiseCount) + spliter
                 dataOutput += str(OpCallCount) + spliter
-                dataOutput += OpLastAction
+                dataOutput += OpLastAction + "\n"
+                fileWriter.write(dataOutput)
                 #print dataOutput
     pass
     #########################################################################
@@ -268,6 +275,9 @@ while dataLine and lineCount < 10:
                     if i >= 1:
                         OpLastAction = actionList[i - 1]
                     dataOutput = ""
+                    dataOutput += str(lineCountOut) + spliter
+                    lineCountOut += 1
+                    dataOutput += dataPiece[0] + spliter
                     dataOutput += dataPiece[1] + spliter
                     dataOutput += dataPiece[2] + spliter
                     dataOutput += str(FLOP) + spliter
@@ -277,7 +287,8 @@ while dataLine and lineCount < 10:
                     dataOutput += str(BB_TillNow + TMP_BB) + spliter
                     dataOutput += str(OpRaiseCount) + spliter
                     dataOutput += str(OpCallCount) + spliter
-                    dataOutput += OpLastAction
+                    dataOutput += OpLastAction + "\n"
+                    fileWriter.write(dataOutput)
                     print dataOutput
                 pass
             pass
