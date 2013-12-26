@@ -285,13 +285,13 @@ while dataLine and lineCount < 20:
         #pass
     pass
     print "OpCallCount", OpCallCount
-    #########################################################################
+
     SB_BB = GetStageMoney(actionSet[0], 0)
     SB_TillNow = SB_BB[0]
     BB_TillNow = SB_BB[1]
     AllTillNow = SB_TillNow + BB_TillNow
 
-
+######################################################################################## after
     if dataPiece[1] == "1": # i am small, op big 0 2
         for round in range(1, len(actionSet), 1): #####ignore pre-flop
             for i in range(len(actionSet[round])):

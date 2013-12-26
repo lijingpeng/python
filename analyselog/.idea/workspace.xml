@@ -43,7 +43,7 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="55" selection-start="8734" selection-end="8734" vertical-scroll-proportion="0.3696498" vertical-offset="2394" max-vertical-offset="5472">
+            <state line="293" column="94" selection-start="9449" selection-end="9449" vertical-scroll-proportion="0.66536963" vertical-offset="2622" max-vertical-offset="5472">
               <folding>
                 <element signature="e#230#1804#0" expanded="false" />
                 <element signature="e#1983#3750#0" expanded="false" />
@@ -639,7 +639,11 @@
       <created>1388062637688</created>
       <updated>1388062637689</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="correctly calc opraisecount and op call  count">
+      <created>1388067277847</created>
+      <updated>1388067277847</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -664,7 +668,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-5" width="1442" height="906" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="8" side_tool="false" content_ui="tabs" />
@@ -675,7 +679,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2364597" sideWeight="0.89343685" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28533685" sideWeight="0.34932956" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28533685" sideWeight="0.6506704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28533685" sideWeight="0.6506704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -694,7 +698,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="find the winner" />
     <MESSAGE value="get all the pokers into pokers" />
     <MESSAGE value="store opponent actions" />
     <MESSAGE value="pre-parsing1" />
@@ -719,7 +722,8 @@
     <MESSAGE value="Parse over, 2.1, with output. without hand strength" />
     <MESSAGE value="annmat" />
     <MESSAGE value="after-pre-flop-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="after-pre-flop-1" />
+    <MESSAGE value="correctly calc opraisecount and op call  count" />
+    <option name="LAST_COMMIT_MESSAGE" value="correctly calc opraisecount and op call  count" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -832,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="55" selection-start="8734" selection-end="8734" vertical-scroll-proportion="0.3696498" vertical-offset="2394" max-vertical-offset="5472">
+        <state line="293" column="94" selection-start="9449" selection-end="9449" vertical-scroll-proportion="0.66536963" vertical-offset="2622" max-vertical-offset="5472">
           <folding>
             <element signature="e#230#1804#0" expanded="false" />
             <element signature="e#1983#3750#0" expanded="false" />
