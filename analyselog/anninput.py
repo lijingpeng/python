@@ -126,16 +126,17 @@ def GetStageMoney(actions, round):
     return retVal
 
 
-def CalcPokerHands(pokerhands):
-    a_count = 0
+def CalcPokerHands(pokerhands, stage):
+    a_count = 0 # done
     pair_ct = 0
-    flush_p = 0
+    flush_c = 0
     strai_p = 0
-    three_p = 0
-    fourh_p = 0
+    three_c = 0
+    fourh_c = 0
 
     number = {}
     flower = {}
+    print "pokerhands",pokerhands
     # calc
     for i in range( len(pokerhands) ):
         if i % 2 == 0: # poker number
@@ -144,14 +145,18 @@ def CalcPokerHands(pokerhands):
             else:
                 number[ pokerhands[i] ] = 1
             pass
+            if pokerhands[i] == "A":
+                a_count += 1
+            pass
         else:           # flower
-            if number.has_key(pokerhands[i]):
+            if flower.has_key(pokerhands[i]):
                 flower[ pokerhands[i] ] += 1
             else:
                 flower[ pokerhands[i] ] = 1
             pass
     pass
 
+    print "a_C", a_count
     print number
     print flower
 
@@ -284,7 +289,6 @@ while dataLine and lineCount < 20:
         #    OpCallCount += 1
         #pass
     pass
-    print "OpCallCount", OpCallCount
 
     SB_BB = GetStageMoney(actionSet[0], 0)
     SB_TillNow = SB_BB[0]
@@ -294,6 +298,11 @@ while dataLine and lineCount < 20:
 ######################################################################################## after
     if dataPiece[1] == "1": # i am small, op big 0 2
         for round in range(1, len(actionSet), 1): #####ignore pre-flop
+            pokers = []
+            for po in range(0, round, 1):
+                pokers += pokerHand[po]
+            pokers += pokerHand[round]
+            CalcPokerHands(pokers, round)
             for i in range(len(actionSet[round])):
                 if i % 2 != 0: # "me"
                     TMP_SB = 0
