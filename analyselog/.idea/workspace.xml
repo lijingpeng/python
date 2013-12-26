@@ -43,11 +43,21 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="207" column="38" selection-start="6696" selection-end="6696" vertical-scroll-proportion="-1.2891567" vertical-offset="2485" max-vertical-offset="3610">
+            <state line="273" column="55" selection-start="8734" selection-end="8734" vertical-scroll-proportion="0.3696498" vertical-offset="2394" max-vertical-offset="5472">
               <folding>
                 <element signature="e#230#1804#0" expanded="false" />
                 <element signature="e#1983#3750#0" expanded="false" />
+                <element signature="e#3789#4418#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="annmat.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/annmat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +118,7 @@
         <option value="$PROJECT_DIR$/parselog.py" />
         <option value="$PROJECT_DIR$/getspecificoppologfile.py" />
         <option value="$PROJECT_DIR$/a" />
+        <option value="$PROJECT_DIR$/annmat.py" />
         <option value="$PROJECT_DIR$/anninput.py" />
       </list>
     </option>
@@ -261,6 +272,24 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="annmat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="analyselog" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/annmat.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -400,19 +429,21 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.getlogfile" />
       <item index="1" class="java.lang.String" itemvalue="Python.neuralabtest" />
       <item index="2" class="java.lang.String" itemvalue="Python.test" />
       <item index="3" class="java.lang.String" itemvalue="Python.parselog" />
       <item index="4" class="java.lang.String" itemvalue="Python.anninput" />
+      <item index="5" class="java.lang.String" itemvalue="Python.annmat" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.anninput" />
-        <item index="1" class="java.lang.String" itemvalue="Python.parselog" />
-        <item index="2" class="java.lang.String" itemvalue="Python.neuralabtest" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.annmat" />
+        <item index="2" class="java.lang.String" itemvalue="Python.parselog" />
+        <item index="3" class="java.lang.String" itemvalue="Python.neuralabtest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -592,7 +623,23 @@
       <created>1387956835359</created>
       <updated>1387956835359</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Parse over, 2.0, with output. without hand strength">
+      <created>1387957416563</created>
+      <updated>1387957416563</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Parse over, 2.1, with output. without hand strength">
+      <created>1387957537848</created>
+      <updated>1387957537848</updated>
+    </task>
+    <task id="LOCAL-00041" summary="annmat">
+      <created>1388047010548</created>
+      <updated>1388047010548</updated>
+    </task>
+    <task id="LOCAL-00042" summary="after-pre-flop-1">
+      <created>1388062637688</created>
+      <updated>1388062637689</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -617,18 +664,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-5" width="1442" height="906" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12844037" sideWeight="0.6935271" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.89343685" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12844037" sideWeight="0.71466315" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2364597" sideWeight="0.89343685" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.15384616" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30647293" sideWeight="0.84615386" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28533685" sideWeight="0.34932956" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28533685" sideWeight="0.6506704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -647,7 +694,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="parse log" />
     <MESSAGE value="find the winner" />
     <MESSAGE value="get all the pokers into pokers" />
     <MESSAGE value="store opponent actions" />
@@ -669,23 +715,32 @@
     <MESSAGE value="money" />
     <MESSAGE value="解析完成，差牌力，没有输出" />
     <MESSAGE value="解析完成，差牌力，没有输出 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="解析完成，差牌力，没有输出 1.0" />
+    <MESSAGE value="Parse over, 2.0, with output. without hand strength" />
+    <MESSAGE value="Parse over, 2.1, with output. without hand strength" />
+    <MESSAGE value="annmat" />
+    <MESSAGE value="after-pre-flop-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="after-pre-flop-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>238</line>
+          <line>296</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>163</line>
+          <line>202</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/anninput.py</url>
+          <line>377</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -704,6 +759,7 @@
           <folding>
             <element signature="e#230#1804#0" expanded="false" />
             <element signature="e#1983#3750#0" expanded="false" />
+            <element signature="e#3789#4418#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="13" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="2736">
@@ -767,12 +816,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/annmat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="38" selection-start="6696" selection-end="6696" vertical-scroll-proportion="-1.2891567" vertical-offset="2485" max-vertical-offset="3610">
+        <state line="273" column="55" selection-start="8734" selection-end="8734" vertical-scroll-proportion="0.3696498" vertical-offset="2394" max-vertical-offset="5472">
           <folding>
             <element signature="e#230#1804#0" expanded="false" />
             <element signature="e#1983#3750#0" expanded="false" />
+            <element signature="e#3789#4418#0" expanded="false" />
           </folding>
         </state>
       </provider>

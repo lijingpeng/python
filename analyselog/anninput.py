@@ -166,7 +166,7 @@ dataLine = fileReader.readline()
 lineCount = 0
 lineCountOut = 1
 
-while dataLine and lineCount < 10:
+while dataLine and lineCount < 20:
     #line sb win opokers actions oactions
     #1#0#0#3h8s#rf#r
     #2#1#0#AsTd|QhTs2d|2c|Jc#rc/crrc/rc/rc#c|cr|r|r
@@ -202,8 +202,8 @@ while dataLine and lineCount < 10:
     if dataPiece[1] == "1": # i am small, op big
         for i in range(len(actionSet[0])):
             ### hand poker
-            hands = list( pokerHand[0] )
-            CalcPokerHands(hands)
+            #hands = list( pokerHand[0] )
+            #CalcPokerHands(hands)
             ###################
             if i % 2 == 0: # "me"
                 actionList = list(actionSet[0][:i])
@@ -214,8 +214,8 @@ while dataLine and lineCount < 10:
                 TURN = 0
                 RIVER = 0
                 RA_CA = GetRaiseCallCount(actionList, 0, 0)
-                OpRaiseCount = RA_CA[0]
-                OpCallCount = RA_CA[1]
+                #OpRaiseCount = RA_CA[0]
+                #OpCallCount = RA_CA[1]
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
                 pass
@@ -231,12 +231,18 @@ while dataLine and lineCount < 10:
                 dataOutput += str(RIVER)+ spliter
                 dataOutput += str(SB_TillNow) + spliter
                 dataOutput += str(BB_TillNow) + spliter
-                dataOutput += str(OpRaiseCount) + spliter
-                dataOutput += str(OpCallCount) + spliter
+                dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
+                dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                 dataOutput += OpLastAction + spliter
                 dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
+        RA_CA = GetRaiseCallCount(actionSet[0], 0, 0)
+        OpRaiseCount += RA_CA[0]
+        OpCallCount  += RA_CA[1]
+        #if len(actionSet[0]) % 2 == 0: # even 2 problem
+        #    OpCallCount += 1
+        #pass
     else:                   # i am big, op small
         for i in range(len(actionSet[0])):
             if i % 2 != 0: # "me"
@@ -249,8 +255,8 @@ while dataLine and lineCount < 10:
                 TURN = 0
                 RIVER = 0
                 RA_CA = GetRaiseCallCount(list(actionSet[0][:i]), 1, 0)
-                OpRaiseCount = RA_CA[0]
-                OpCallCount = RA_CA[1]
+                #OpRaiseCount = RA_CA[0]
+                #OpCallCount = RA_CA[1]
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
                 dataOutput = ""
@@ -264,14 +270,21 @@ while dataLine and lineCount < 10:
                 dataOutput += str(RIVER)+ spliter
                 dataOutput += str(SB_TillNow) + spliter
                 dataOutput += str(BB_TillNow) + spliter
-                dataOutput += str(OpRaiseCount) + spliter
-                dataOutput += str(OpCallCount) + spliter
+                dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
+                dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                 dataOutput += OpLastAction + spliter
                 dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
         pass
+        RA_CA = GetRaiseCallCount(actionSet[0], 1, 0)
+        OpRaiseCount += RA_CA[0]
+        OpCallCount  += RA_CA[1]
+        #if len(actionSet[0]) % 2 != 0: # odd 1 problem
+        #    OpCallCount += 1
+        #pass
     pass
+    print "OpCallCount", OpCallCount
     #########################################################################
     SB_BB = GetStageMoney(actionSet[0], 0)
     SB_TillNow = SB_BB[0]
@@ -286,7 +299,7 @@ while dataLine and lineCount < 10:
                     TMP_SB = 0
                     TMP_BB = 0
                     actionList = list(actionSet[round][:i])
-                    SB_BB = GetStageMoney(actionList, 1)
+                    SB_BB = GetStageMoney(actionList, round)
                     TMP_SB = SB_BB[0]
                     TMP_BB = SB_BB[1]
                     if round == 1:
@@ -301,9 +314,12 @@ while dataLine and lineCount < 10:
                         FLOP = 0
                         TURN = 0
                         RIVER = 1
-                    RA_CA = GetRaiseCallCount(actionList, 0, 1)
-                    OpRaiseCount += RA_CA[0]
-                    OpCallCount += RA_CA[1]
+                    pass
+                    TMP_RC = 0
+                    TMP_CC = 0
+                    RA_CA = GetRaiseCallCount(actionList, 0, round)
+                    #TMP_RC = RA_CA[0]
+                    #TMP_CC = RA_CA[1]
                     if i >= 1:
                         OpLastAction = actionList[i - 1]
                     dataOutput = ""
@@ -317,8 +333,8 @@ while dataLine and lineCount < 10:
                     dataOutput += str(RIVER)+ spliter
                     dataOutput += str(SB_TillNow + TMP_SB) + spliter
                     dataOutput += str(BB_TillNow + TMP_BB) + spliter
-                    dataOutput += str(OpRaiseCount) + spliter
-                    dataOutput += str(OpCallCount) + spliter
+                    dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
+                    dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                     dataOutput += OpLastAction + spliter
                     dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
@@ -326,12 +342,74 @@ while dataLine and lineCount < 10:
                 pass
             pass
 
+            RA_CA = GetRaiseCallCount(actionSet[round], 0, round)
+            OpRaiseCount += RA_CA[0]
+            OpCallCount  += RA_CA[1]
+            #if len(actionSet[round - 1]) % 2 != 0 and round > 1:
+            #    OpCallCount += 1
+            #pass
             SB_BB = GetStageMoney(actionSet[round], round)
             SB_TillNow += SB_BB[0]
             BB_TillNow += SB_BB[1]
             AllTillNow = SB_TillNow + BB_TillNow
         pass
     else: ## i am big, op big 1 3
+        for round in range(1, len(actionSet), 1): #####ignore pre-flop
+            for i in range(len(actionSet[round])):
+                if i % 2 == 0: # "me"
+                    TMP_SB = 0
+                    TMP_BB = 0
+                    actionList = list(actionSet[round][:i])
+                    SB_BB = GetStageMoney(actionList, round)
+                    TMP_SB = SB_BB[0]
+                    TMP_BB = SB_BB[1]
+                    if round == 1:
+                        FLOP = 1
+                        TURN = 0
+                        RIVER = 0
+                    elif round == 2:
+                        FLOP = 0
+                        TURN = 1
+                        RIVER = 0
+                    else:
+                        FLOP = 0
+                        TURN = 0
+                        RIVER = 1
+                    RA_CA = GetRaiseCallCount(actionList, 1, round)
+                    #OpRaiseCount += RA_CA[0]
+                    #OpCallCount += RA_CA[1]
+                    if i >= 1:
+                        OpLastAction = actionList[i - 1]
+                    dataOutput = ""
+                    dataOutput += str(lineCountOut) + spliter
+                    lineCountOut += 1
+                    dataOutput += dataPiece[0] + spliter
+                    dataOutput += dataPiece[1] + spliter
+                    dataOutput += dataPiece[2] + spliter
+                    dataOutput += str(FLOP) + spliter
+                    dataOutput += str(TURN) + spliter
+                    dataOutput += str(RIVER)+ spliter
+                    dataOutput += str(SB_TillNow + TMP_SB) + spliter
+                    dataOutput += str(BB_TillNow + TMP_BB) + spliter
+                    dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
+                    dataOutput += str(OpCallCount + RA_CA[1]) + spliter
+                    dataOutput += OpLastAction + spliter
+                    dataOutput += list(actionSet[round])[i] + "\n"
+                    fileWriter.write(dataOutput)
+                    #print dataOutput
+                pass
+
+            RA_CA = GetRaiseCallCount(actionSet[round], 1, round)
+            OpRaiseCount += RA_CA[0]
+            OpCallCount  += RA_CA[1]
+            #if len(actionSet[round - 1]) % 2 == 0 and round > 1:
+            #    OpCallCount += 1
+            #pass
+
+            SB_BB = GetStageMoney(actionSet[round], round)
+            SB_TillNow += SB_BB[0]
+            BB_TillNow += SB_BB[1]
+            AllTillNow = SB_TillNow + BB_TillNow
         pass
     pass
 
