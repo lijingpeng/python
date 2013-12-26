@@ -4,7 +4,7 @@ __author__ = 'lijingpeng'
 # Global data
 dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
-spliter = "_"
+spliter = ","
 
 def GetRaiseCallCount(actions, opsmallorbig, stage):
     callCount = 0
@@ -125,6 +125,36 @@ def GetStageMoney(actions, round):
     retVal += [ bbTotal ]
     return retVal
 
+
+def CalcPokerHands(pokerhands):
+    a_count = 0
+    pair_ct = 0
+    flush_p = 0
+    strai_p = 0
+    three_p = 0
+    fourh_p = 0
+
+    number = {}
+    flower = {}
+    # calc
+    for i in range( len(pokerhands) ):
+        if i % 2 == 0: # poker number
+            if number.has_key(pokerhands[i]):
+                number[ pokerhands[i] ] += 1
+            else:
+                number[ pokerhands[i] ] = 1
+            pass
+        else:           # flower
+            if number.has_key(pokerhands[i]):
+                flower[ pokerhands[i] ] += 1
+            else:
+                flower[ pokerhands[i] ] = 1
+            pass
+    pass
+
+    print number
+    print flower
+
 ########## main process here ###########
 # open output file
 fileWriter = open(annDataFile, "w")
@@ -142,26 +172,39 @@ while dataLine and lineCount < 10:
     #2#1#0#AsTd|QhTs2d|2c|Jc#rc/crrc/rc/rc#c|cr|r|r
     dataLine = dataLine.strip("\n")
     dataPiece = dataLine.split("#")
+    pokerHand = dataPiece[3].split("|")
     actionSet = dataPiece[4].split("/")
     if dataPiece[1] == "0" and dataPiece[5] == "f":
         dataLine = fileReader.readline()
         lineCount += 1
         continue
     print "org", lineCount, "->", dataLine
+    print "poker_hand", pokerHand
 
     index = 0
     FLOP = 0
     TURN = 0
-    RIVER = 0 #
+    RIVER = 0
     OpRaiseCount = 0
     OpCallCount = 0
     SB_TillNow = 0
     BB_TillNow = 0
     OpLastAction = ""
+    #
+    A_Count = 0
+    Pair_Count = 0
+    Flush_Possible = 0
+    Straight_Possible = 0
+    Three_kind = 0
+    Four_kind = 0
 
     ######################################################### pre-flop
     if dataPiece[1] == "1": # i am small, op big
         for i in range(len(actionSet[0])):
+            ### hand poker
+            hands = list( pokerHand[0] )
+            CalcPokerHands(hands)
+            ###################
             if i % 2 == 0: # "me"
                 actionList = list(actionSet[0][:i])
                 SB_BB = GetStageMoney(actionList, 0)
@@ -175,6 +218,8 @@ while dataLine and lineCount < 10:
                 OpCallCount = RA_CA[1]
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
+                pass
+
                 dataOutput = ""
                 dataOutput += str(lineCountOut) + spliter
                 lineCountOut += 1
@@ -285,6 +330,8 @@ while dataLine and lineCount < 10:
             SB_TillNow += SB_BB[0]
             BB_TillNow += SB_BB[1]
             AllTillNow = SB_TillNow + BB_TillNow
+        pass
+    else: ## i am big, op big 1 3
         pass
     pass
 
