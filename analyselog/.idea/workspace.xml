@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="CalcPokerHands | a_count done">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,11 +43,10 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="293" column="94" selection-start="9449" selection-end="9449" vertical-scroll-proportion="0.66536963" vertical-offset="2622" max-vertical-offset="5472">
+            <state line="128" column="18" selection-start="3757" selection-end="3771" vertical-scroll-proportion="0.5564202" vertical-offset="56" max-vertical-offset="6707">
               <folding>
                 <element signature="e#230#1804#0" expanded="false" />
                 <element signature="e#1983#3750#0" expanded="false" />
-                <element signature="e#3789#4418#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -643,7 +642,15 @@
       <created>1388067277847</created>
       <updated>1388067277847</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="correctly calc opraisecount and op call  count">
+      <created>1388067313920</created>
+      <updated>1388067313920</updated>
+    </task>
+    <task id="LOCAL-00045" summary="CalcPokerHands | a_count done">
+      <created>1388068318201</created>
+      <updated>1388068318201</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -698,7 +705,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="get all the pokers into pokers" />
     <MESSAGE value="store opponent actions" />
     <MESSAGE value="pre-parsing1" />
     <MESSAGE value="add anninput" />
@@ -723,28 +729,24 @@
     <MESSAGE value="annmat" />
     <MESSAGE value="after-pre-flop-1" />
     <MESSAGE value="correctly calc opraisecount and op call  count" />
-    <option name="LAST_COMMIT_MESSAGE" value="correctly calc opraisecount and op call  count" />
+    <MESSAGE value="CalcPokerHands | a_count done" />
+    <option name="LAST_COMMIT_MESSAGE" value="CalcPokerHands | a_count done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>296</line>
+          <line>334</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>202</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>377</line>
-          <option name="timeStamp" value="15" />
+          <line>152</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -763,7 +765,6 @@
           <folding>
             <element signature="e#230#1804#0" expanded="false" />
             <element signature="e#1983#3750#0" expanded="false" />
-            <element signature="e#3789#4418#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,11 +837,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="94" selection-start="9449" selection-end="9449" vertical-scroll-proportion="0.66536963" vertical-offset="2622" max-vertical-offset="5472">
+        <state line="128" column="18" selection-start="3757" selection-end="3771" vertical-scroll-proportion="0.5564202" vertical-offset="56" max-vertical-offset="6707">
           <folding>
             <element signature="e#230#1804#0" expanded="false" />
             <element signature="e#1983#3750#0" expanded="false" />
-            <element signature="e#3789#4418#0" expanded="false" />
           </folding>
         </state>
       </provider>

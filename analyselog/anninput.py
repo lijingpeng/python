@@ -129,10 +129,10 @@ def GetStageMoney(actions, round):
 def CalcPokerHands(pokerhands, stage):
     a_count = 0 # done
     pair_ct = 0
-    flush_c = 0
-    strai_p = 0
     three_c = 0
     fourh_c = 0
+    flush_c = 0
+    #strai_p = 0
 
     number = {}
     flower = {}
@@ -156,9 +156,38 @@ def CalcPokerHands(pokerhands, stage):
             pass
     pass
 
+    ## traverse dict
+    for num in number.keys():
+        if number[num] > 1:
+            pair_ct += 1
+        elif number[num] >= 3:
+            three_c += 1
+        elif number[num] == 4:
+            fourh_c = 1
+        else:
+            pass
+    pass
+
+    ## traverse flower dict
+    for fl in flower.keys():
+        if flower[fl] > flush_c:
+            flush_c = flower[fl]
+
+
     print "a_C", a_count
+    print "pair", pair_ct
+    print "three", three_c
+    print "four", fourh_c
+    print "flush_c",flush_c
     print number
     print flower
+    retVal = []
+    retVal += [a_count]
+    retVal += [pair_ct]
+    retVal += [three_c]
+    retVal += [fourh_c]
+    return retVal
+
 
 ########## main process here ###########
 # open output file
