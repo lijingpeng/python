@@ -136,7 +136,7 @@ def CalcPokerHands(pokerhands, stage):
 
     number = {}
     flower = {}
-    print "pokerhands",pokerhands
+    #print "pokerhands",pokerhands
     # calc
     for i in range( len(pokerhands) ):
         if i % 2 == 0: # poker number
@@ -172,20 +172,20 @@ def CalcPokerHands(pokerhands, stage):
     for fl in flower.keys():
         if flower[fl] > flush_c:
             flush_c = flower[fl]
-
-
-    print "a_C", a_count
-    print "pair", pair_ct
-    print "three", three_c
-    print "four", fourh_c
-    print "flush_c",flush_c
-    print number
-    print flower
+    pass
+    #print "a_C", a_count
+    #print "pair", pair_ct
+    #print "three", three_c
+    #print "four", fourh_c
+    #print "flush_c",flush_c
+    #print number
+    #print flower
     retVal = []
     retVal += [a_count]
     retVal += [pair_ct]
     retVal += [three_c]
     retVal += [fourh_c]
+    retVal += [flush_c]
     return retVal
 
 
@@ -213,7 +213,7 @@ while dataLine and lineCount < 20:
         lineCount += 1
         continue
     print "org", lineCount, "->", dataLine
-    print "poker_hand", pokerHand
+    #print "poker_hand", pokerHand
 
     index = 0
     FLOP = 0
@@ -232,6 +232,8 @@ while dataLine and lineCount < 20:
     Three_kind = 0
     Four_kind = 0
 
+    pokers = pokerHand[0]
+    CPH = CalcPokerHands(pokers, 0)
     ######################################################### pre-flop
     if dataPiece[1] == "1": # i am small, op big
         for i in range(len(actionSet[0])):
@@ -268,6 +270,12 @@ while dataLine and lineCount < 20:
                 dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                 dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                 dataOutput += OpLastAction + spliter
+                ## hand strength
+                dataOutput += str(CPH[0]) + spliter
+                dataOutput += str(CPH[1]) + spliter
+                dataOutput += str(CPH[2]) + spliter
+                dataOutput += str(CPH[3]) + spliter
+                dataOutput += str(CPH[4]) + spliter
                 dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
@@ -307,6 +315,12 @@ while dataLine and lineCount < 20:
                 dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                 dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                 dataOutput += OpLastAction + spliter
+                ## hand strength
+                dataOutput += str(CPH[0]) + spliter
+                dataOutput += str(CPH[1]) + spliter
+                dataOutput += str(CPH[2]) + spliter
+                dataOutput += str(CPH[3]) + spliter
+                dataOutput += str(CPH[4]) + spliter
                 dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
@@ -331,7 +345,7 @@ while dataLine and lineCount < 20:
             for po in range(0, round, 1):
                 pokers += pokerHand[po]
             pokers += pokerHand[round]
-            CalcPokerHands(pokers, round)
+            CPH = CalcPokerHands(pokers, round)
             for i in range(len(actionSet[round])):
                 if i % 2 != 0: # "me"
                     TMP_SB = 0
@@ -374,6 +388,12 @@ while dataLine and lineCount < 20:
                     dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                     dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                     dataOutput += OpLastAction + spliter
+                    ## hand strength
+                    dataOutput += str(CPH[0]) + spliter
+                    dataOutput += str(CPH[1]) + spliter
+                    dataOutput += str(CPH[2]) + spliter
+                    dataOutput += str(CPH[3]) + spliter
+                    dataOutput += str(CPH[4]) + spliter
                     dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
                     #print dataOutput
@@ -393,6 +413,11 @@ while dataLine and lineCount < 20:
         pass
     else: ## i am big, op big 1 3
         for round in range(1, len(actionSet), 1): #####ignore pre-flop
+            pokers = []
+            for po in range(0, round, 1):
+                pokers += pokerHand[po]
+            pokers += pokerHand[round]
+            CPH = CalcPokerHands(pokers, round)
             for i in range(len(actionSet[round])):
                 if i % 2 == 0: # "me"
                     TMP_SB = 0
@@ -432,6 +457,12 @@ while dataLine and lineCount < 20:
                     dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                     dataOutput += str(OpCallCount + RA_CA[1]) + spliter
                     dataOutput += OpLastAction + spliter
+                    ## hand strength
+                    dataOutput += str(CPH[0]) + spliter
+                    dataOutput += str(CPH[1]) + spliter
+                    dataOutput += str(CPH[2]) + spliter
+                    dataOutput += str(CPH[3]) + spliter
+                    dataOutput += str(CPH[4]) + spliter
                     dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
                     #print dataOutput
