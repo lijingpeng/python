@@ -43,11 +43,11 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="42" selection-start="6497" selection-end="6497" vertical-scroll-proportion="0.32624114" vertical-offset="1108" max-vertical-offset="6156">
+            <state line="130" column="0" selection-start="3795" selection-end="3795" vertical-scroll-proportion="-3.0088654" vertical-offset="2077" max-vertical-offset="7258">
               <folding>
-                <element signature="e#230#1804#0" expanded="false" />
-                <element signature="e#1983#3750#0" expanded="false" />
-                <element signature="e#3796#5232#0" expanded="false" />
+                <element signature="e#273#1847#0" expanded="false" />
+                <element signature="e#2026#3793#0" expanded="false" />
+                <element signature="e#3839#5275#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,7 +56,7 @@
       <file leaf-file-name="annmat.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/annmat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="9" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -655,7 +655,11 @@
       <created>1388109320558</created>
       <updated>1388109320558</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="hand strength done. v1.0">
+      <created>1388111566863</created>
+      <updated>1388111566863</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -710,7 +714,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="pre-parsing1" />
     <MESSAGE value="add anninput" />
     <MESSAGE value="read file" />
     <MESSAGE value="stage" />
@@ -735,14 +738,15 @@
     <MESSAGE value="correctly calc opraisecount and op call  count" />
     <MESSAGE value="CalcPokerHands | a_count done" />
     <MESSAGE value="CalcPokerHands done" />
-    <option name="LAST_COMMIT_MESSAGE" value="CalcPokerHands done" />
+    <MESSAGE value="hand strength done. v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="hand strength done. v1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>348</line>
+          <line>379</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -763,9 +767,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1501">
           <folding>
-            <element signature="e#230#1804#0" expanded="false" />
-            <element signature="e#1983#3750#0" expanded="false" />
-            <element signature="e#3796#5232#0" expanded="false" />
+            <element signature="e#273#1847#0" expanded="false" />
+            <element signature="e#2026#3793#0" expanded="false" />
+            <element signature="e#3839#5275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/annmat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neuralabtest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
@@ -836,13 +833,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/annmat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="42" selection-start="6497" selection-end="6497" vertical-scroll-proportion="0.32624114" vertical-offset="1108" max-vertical-offset="6156">
+        <state line="130" column="0" selection-start="3795" selection-end="3795" vertical-scroll-proportion="-3.0088654" vertical-offset="2077" max-vertical-offset="7258">
           <folding>
-            <element signature="e#230#1804#0" expanded="false" />
-            <element signature="e#1983#3750#0" expanded="false" />
-            <element signature="e#3796#5232#0" expanded="false" />
+            <element signature="e#273#1847#0" expanded="false" />
+            <element signature="e#2026#3793#0" expanded="false" />
+            <element signature="e#3839#5275#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -5,6 +5,9 @@ __author__ = 'lijingpeng'
 dataFile = "/home/lijingpeng/Public/annout.txt"
 annDataFile = "/home/lijingpeng/Public/ann.txt"
 spliter = ","
+raiseLabel = 3
+callLabel = 2
+foldLabel = 1
 
 def GetRaiseCallCount(actions, opsmallorbig, stage):
     callCount = 0
@@ -200,7 +203,7 @@ dataLine = fileReader.readline()
 lineCount = 0
 lineCountOut = 1
 
-while dataLine and lineCount < 20:
+while dataLine:
     #line sb win opokers actions oactions
     #1#0#0#3h8s#rf#r
     #2#1#0#AsTd|QhTs2d|2c|Jc#rc/crrc/rc/rc#c|cr|r|r
@@ -224,6 +227,7 @@ while dataLine and lineCount < 20:
     SB_TillNow = 0
     BB_TillNow = 0
     OpLastAction = ""
+    OpLastActionLabel = 0
     #
     A_Count = 0
     Pair_Count = 0
@@ -255,7 +259,12 @@ while dataLine and lineCount < 20:
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
                 pass
-
+                if OpLastAction == "r":
+                    OpLastActionLabel = 3
+                elif OpLastAction == "c":
+                    OpLastActionLabel = 2
+                else:
+                    OpLastActionLabel = 1
                 dataOutput = ""
                 dataOutput += str(lineCountOut) + spliter
                 lineCountOut += 1
@@ -269,14 +278,22 @@ while dataLine and lineCount < 20:
                 dataOutput += str(BB_TillNow) + spliter
                 dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                 dataOutput += str(OpCallCount + RA_CA[1]) + spliter
-                dataOutput += OpLastAction + spliter
+                dataOutput += str(OpLastActionLabel) + spliter
                 ## hand strength
                 dataOutput += str(CPH[0]) + spliter
                 dataOutput += str(CPH[1]) + spliter
                 dataOutput += str(CPH[2]) + spliter
                 dataOutput += str(CPH[3]) + spliter
                 dataOutput += str(CPH[4]) + spliter
-                dataOutput += list(actionSet[0])[i] + "\n"
+                #dataOutput += actionList[i] + "\n"
+                act = list(actionSet[0])[i]
+                if act == "r":
+                    dataOutput += str(3) + "\n"
+                elif act == "c":
+                    dataOutput += str(2) + "\n"
+                else:
+                    dataOutput += str(1) + "\n"
+
                 fileWriter.write(dataOutput)
                 #print dataOutput
         RA_CA = GetRaiseCallCount(actionSet[0], 0, 0)
@@ -301,6 +318,13 @@ while dataLine and lineCount < 20:
                 #OpCallCount = RA_CA[1]
                 if i >= 1:
                     OpLastAction = actionList[i - 1]
+                pass
+                if OpLastAction == "r":
+                    OpLastActionLabel = 3
+                elif OpLastAction == "c":
+                    OpLastActionLabel = 2
+                else:
+                    OpLastActionLabel = 1
                 dataOutput = ""
                 dataOutput += str(lineCountOut) + spliter
                 lineCountOut += 1
@@ -314,14 +338,21 @@ while dataLine and lineCount < 20:
                 dataOutput += str(BB_TillNow) + spliter
                 dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                 dataOutput += str(OpCallCount + RA_CA[1]) + spliter
-                dataOutput += OpLastAction + spliter
+                dataOutput += str(OpLastActionLabel) + spliter
                 ## hand strength
                 dataOutput += str(CPH[0]) + spliter
                 dataOutput += str(CPH[1]) + spliter
                 dataOutput += str(CPH[2]) + spliter
                 dataOutput += str(CPH[3]) + spliter
                 dataOutput += str(CPH[4]) + spliter
-                dataOutput += list(actionSet[0])[i] + "\n"
+                act = list(actionSet[0])[i]
+                if act == "r":
+                    dataOutput += str(3) + "\n"
+                elif act == "c":
+                    dataOutput += str(2) + "\n"
+                else:
+                    dataOutput += str(1) + "\n"
+                #dataOutput += list(actionSet[0])[i] + "\n"
                 fileWriter.write(dataOutput)
                 #print dataOutput
         pass
@@ -374,6 +405,13 @@ while dataLine and lineCount < 20:
                     #TMP_CC = RA_CA[1]
                     if i >= 1:
                         OpLastAction = actionList[i - 1]
+                    pass
+                    if OpLastAction == "r":
+                        OpLastActionLabel = 3
+                    elif OpLastAction == "c":
+                        OpLastActionLabel = 2
+                    else:
+                        OpLastActionLabel = 1
                     dataOutput = ""
                     dataOutput += str(lineCountOut) + spliter
                     lineCountOut += 1
@@ -387,14 +425,21 @@ while dataLine and lineCount < 20:
                     dataOutput += str(BB_TillNow + TMP_BB) + spliter
                     dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                     dataOutput += str(OpCallCount + RA_CA[1]) + spliter
-                    dataOutput += OpLastAction + spliter
+                    dataOutput += str(OpLastActionLabel) + spliter
                     ## hand strength
                     dataOutput += str(CPH[0]) + spliter
                     dataOutput += str(CPH[1]) + spliter
                     dataOutput += str(CPH[2]) + spliter
                     dataOutput += str(CPH[3]) + spliter
                     dataOutput += str(CPH[4]) + spliter
-                    dataOutput += list(actionSet[round])[i] + "\n"
+                    act = list(actionSet[round])[i]
+                    if act == "r":
+                        dataOutput += str(3) + "\n"
+                    elif act == "c":
+                        dataOutput += str(2) + "\n"
+                    else:
+                        dataOutput += str(1) + "\n"
+                    #dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
                     #print dataOutput
                 pass
@@ -443,6 +488,12 @@ while dataLine and lineCount < 20:
                     #OpCallCount += RA_CA[1]
                     if i >= 1:
                         OpLastAction = actionList[i - 1]
+                    if OpLastAction == "r":
+                        OpLastActionLabel = 3
+                    elif OpLastAction == "c":
+                        OpLastActionLabel = 2
+                    else:
+                        OpLastActionLabel = 1
                     dataOutput = ""
                     dataOutput += str(lineCountOut) + spliter
                     lineCountOut += 1
@@ -456,14 +507,21 @@ while dataLine and lineCount < 20:
                     dataOutput += str(BB_TillNow + TMP_BB) + spliter
                     dataOutput += str(OpRaiseCount + RA_CA[0]) + spliter
                     dataOutput += str(OpCallCount + RA_CA[1]) + spliter
-                    dataOutput += OpLastAction + spliter
+                    dataOutput += str(OpLastActionLabel) + spliter
                     ## hand strength
                     dataOutput += str(CPH[0]) + spliter
                     dataOutput += str(CPH[1]) + spliter
                     dataOutput += str(CPH[2]) + spliter
                     dataOutput += str(CPH[3]) + spliter
                     dataOutput += str(CPH[4]) + spliter
-                    dataOutput += list(actionSet[round])[i] + "\n"
+                    act = list(actionSet[round])[i]
+                    if act == "r":
+                        dataOutput += str(3) + "\n"
+                    elif act == "c":
+                        dataOutput += str(2) + "\n"
+                    else:
+                        dataOutput += str(1) + "\n"
+                    #dataOutput += list(actionSet[round])[i] + "\n"
                     fileWriter.write(dataOutput)
                     #print dataOutput
                 pass
