@@ -4,8 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/parselog.py" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
+    <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="hand strength done. v2.0">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="analyselog.iws" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="parselog.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parselog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="13" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="2736">
+            <state line="48" column="13" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="2736">
               <folding>
                 <element signature="e#60#77#0" expanded="true" />
               </folding>
@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="anninput.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="0" selection-start="3795" selection-end="3795" vertical-scroll-proportion="-3.0088654" vertical-offset="2077" max-vertical-offset="7258">
+            <state line="68" column="29" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7258">
               <folding>
                 <element signature="e#273#1847#0" expanded="false" />
                 <element signature="e#2026#3793#0" expanded="false" />
@@ -53,37 +53,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="splitTrainTest.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/splitTrainTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="21" selection-start="226" selection-end="226" vertical-scroll-proportion="0.2358156" vertical-offset="0" max-vertical-offset="589">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="annmat.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/annmat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="neuralabtest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neuralabtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="252" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getspecificoppologfile.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+            <state line="4" column="0" selection-start="73" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -120,11 +102,12 @@
         <option value="$PROJECT_DIR$/a" />
         <option value="$PROJECT_DIR$/annmat.py" />
         <option value="$PROJECT_DIR$/anninput.py" />
+        <option value="$PROJECT_DIR$/splitTrainTest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
+    <option name="x" value="1439" />
     <option name="y" value="-5" />
     <option name="width" value="1442" />
     <option name="height" value="906" />
@@ -195,7 +178,7 @@
       </PyConsoleSettings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.anninput">
+  <component name="RunManager" selected="Python.splitTrainTest">
     <configuration default="false" name="neuralabtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,24 +192,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="analyselog" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neuralabtest.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="analyselog" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -285,6 +250,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="analyselog" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/annmat.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="splitTrainTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="analyselog" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/splitTrainTest.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -432,18 +415,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.getlogfile" />
       <item index="1" class="java.lang.String" itemvalue="Python.neuralabtest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.parselog" />
-      <item index="4" class="java.lang.String" itemvalue="Python.anninput" />
-      <item index="5" class="java.lang.String" itemvalue="Python.annmat" />
+      <item index="2" class="java.lang.String" itemvalue="Python.parselog" />
+      <item index="3" class="java.lang.String" itemvalue="Python.anninput" />
+      <item index="4" class="java.lang.String" itemvalue="Python.annmat" />
+      <item index="5" class="java.lang.String" itemvalue="Python.splitTrainTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.anninput" />
-        <item index="1" class="java.lang.String" itemvalue="Python.annmat" />
-        <item index="2" class="java.lang.String" itemvalue="Python.parselog" />
-        <item index="3" class="java.lang.String" itemvalue="Python.neuralabtest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.splitTrainTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.anninput" />
+        <item index="2" class="java.lang.String" itemvalue="Python.annmat" />
+        <item index="3" class="java.lang.String" itemvalue="Python.parselog" />
+        <item index="4" class="java.lang.String" itemvalue="Python.neuralabtest" />
       </list>
     </recent_temporary>
   </component>
@@ -659,7 +642,15 @@
       <created>1388111566863</created>
       <updated>1388111566863</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="hand strength done. v2.0">
+      <created>1388121763331</created>
+      <updated>1388121763331</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add splitTrainTest">
+      <created>1388211668387</created>
+      <updated>1388211668387</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -683,7 +674,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-5" width="1442" height="906" extended-state="6" />
+    <frame x="1439" y="-5" width="1442" height="906" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -714,8 +705,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="add anninput" />
-    <MESSAGE value="read file" />
     <MESSAGE value="stage" />
     <MESSAGE value="GetRaiseCount" />
     <MESSAGE value="finish" />
@@ -739,7 +728,9 @@
     <MESSAGE value="CalcPokerHands | a_count done" />
     <MESSAGE value="CalcPokerHands done" />
     <MESSAGE value="hand strength done. v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="hand strength done. v1.0" />
+    <MESSAGE value="hand strength done. v2.0" />
+    <MESSAGE value="add splitTrainTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add splitTrainTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,29 +774,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1142" column="0" selection-start="47510" selection-end="47588" vertical-scroll-proportion="0.33173078" vertical-offset="20306" max-vertical-offset="27968" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/a">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="406" selection-end="406" vertical-scroll-proportion="0.37931034" vertical-offset="0" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+        <state line="21" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.7074468" vertical-offset="0" max-vertical-offset="564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.59574467" vertical-offset="120" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
@@ -819,35 +809,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="252" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annmat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="3795" selection-end="3795" vertical-scroll-proportion="-3.0088654" vertical-offset="2077" max-vertical-offset="7258">
+        <state line="68" column="29" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7258">
           <folding>
             <element signature="e#273#1847#0" expanded="false" />
             <element signature="e#2026#3793#0" expanded="false" />
             <element signature="e#3839#5275#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annmat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="73" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/splitTrainTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="226" selection-end="226" vertical-scroll-proportion="0.2358156" vertical-offset="0" max-vertical-offset="589">
+          <folding />
         </state>
       </provider>
     </entry>
