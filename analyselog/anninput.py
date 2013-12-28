@@ -266,11 +266,11 @@ while dataLine:
                 else:
                     OpLastActionLabel = 1
                 dataOutput = ""
-                dataOutput += str(lineCountOut) + spliter
+                #dataOutput += str(lineCountOut) + spliter
                 lineCountOut += 1
-                dataOutput += dataPiece[0] + spliter
+                #dataOutput += dataPiece[0] + spliter
                 dataOutput += dataPiece[1] + spliter
-                dataOutput += dataPiece[2] + spliter
+                #dataOutput += dataPiece[2] + spliter
                 dataOutput += str(FLOP) + spliter
                 dataOutput += str(TURN) + spliter
                 dataOutput += str(RIVER)+ spliter
@@ -326,11 +326,11 @@ while dataLine:
                 else:
                     OpLastActionLabel = 1
                 dataOutput = ""
-                dataOutput += str(lineCountOut) + spliter
+                #dataOutput += str(lineCountOut) + spliter
                 lineCountOut += 1
-                dataOutput += dataPiece[0] + spliter
+                #dataOutput += dataPiece[0] + spliter
                 dataOutput += dataPiece[1] + spliter
-                dataOutput += dataPiece[2] + spliter
+                #dataOutput += dataPiece[2] + spliter
                 dataOutput += str(FLOP) + spliter
                 dataOutput += str(TURN) + spliter
                 dataOutput += str(RIVER)+ spliter
@@ -413,11 +413,11 @@ while dataLine:
                     else:
                         OpLastActionLabel = 1
                     dataOutput = ""
-                    dataOutput += str(lineCountOut) + spliter
+                    #dataOutput += str(lineCountOut) + spliter
                     lineCountOut += 1
-                    dataOutput += dataPiece[0] + spliter
+                    #dataOutput += dataPiece[0] + spliter
                     dataOutput += dataPiece[1] + spliter
-                    dataOutput += dataPiece[2] + spliter
+                    #dataOutput += dataPiece[2] + spliter
                     dataOutput += str(FLOP) + spliter
                     dataOutput += str(TURN) + spliter
                     dataOutput += str(RIVER)+ spliter
@@ -495,11 +495,11 @@ while dataLine:
                     else:
                         OpLastActionLabel = 1
                     dataOutput = ""
-                    dataOutput += str(lineCountOut) + spliter
+                    #dataOutput += str(lineCountOut) + spliter
                     lineCountOut += 1
-                    dataOutput += dataPiece[0] + spliter
+                    #dataOutput += dataPiece[0] + spliter
                     dataOutput += dataPiece[1] + spliter
-                    dataOutput += dataPiece[2] + spliter
+                    #dataOutput += dataPiece[2] + spliter
                     dataOutput += str(FLOP) + spliter
                     dataOutput += str(TURN) + spliter
                     dataOutput += str(RIVER)+ spliter
