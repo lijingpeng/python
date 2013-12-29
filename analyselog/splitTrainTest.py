@@ -1,8 +1,8 @@
 __author__ = 'lijingpeng'
 
-dataFile = "/home/lijingpeng/Public/ann.txt"
-trainFile ="/home/lijingpeng/Public/train.csv"
-testFile = "/home/lijingpeng/Public/test.csv"
+dataFile = "/home/lijingpeng/Public/test.csv"
+trainFile ="/home/lijingpeng/Public/strain.csv"
+testFile = "/home/lijingpeng/Public/stest.csv"
 
 fileWriterTrain = open(trainFile, "w")
 fileWriterTest = open(testFile, "w")
@@ -12,7 +12,7 @@ dataLine = fileReader.readline()
 while dataLine:
     lineCount += 1
     print lineCount
-    if lineCount < 837458:
+    if lineCount < 37458:
         fileWriterTest.write(dataLine)
     else:
         fileWriterTrain.write(dataLine)
