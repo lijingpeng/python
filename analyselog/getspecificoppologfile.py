@@ -15,8 +15,18 @@ for path in dataPaths:
     files = files + os.listdir(path)
     # Get log files for specific opponent and store them in destination folder
     for filename in files:
-        if filename.find( opponent ) != -1:
+        if filename.find( opponent ) != -1 and filename.find( "feste" ) != -1 :
             shutil.copyfile(path + filename, destination + filename)
+        elif filename.find( opponent ) != -1 and filename.find("hyperborean"):
+            shutil.copyfile(path + filename, destination + filename)
+        elif filename.find( opponent ) != -1 and filename.find("zbot"):
+            shutil.copyfile(path + filename, destination + filename)
+        elif filename.find( opponent ) != -1 and filename.find("littlerock"):
+            shutil.copyfile(path + filename, destination + filename)
+        elif filename.find( opponent ) != -1 and filename.find("propokertools"):
+            shutil.copyfile(path + filename, destination + filename)
+        else:
+            pass
     pass
 pass
 

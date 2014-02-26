@@ -7,7 +7,7 @@ import string
 
 # settings
 LogFolder = "/home/lijingpeng/Public/tmp/"
-OutputFile = "/home/lijingpeng/Public/annout.txt"
+OutputFile = "/home/lijingpeng/Public/fat/annout.txt"
 Champion = "marv"
 
 # store all filename
@@ -59,6 +59,8 @@ for logfile in logFiles:
             #print "winner ", winnerIndex
 
             # get all the pokers into pokers
+            # Tc6d|Ks5h/QsTs2s/9s/Ah
+            """
             pokers_a = dataPiece[3].split("|")
             strTmp = pokers_a[1]
             pokers_b = strTmp.split("/")
@@ -66,6 +68,8 @@ for logfile in logFiles:
             dataOutput += "#" + pokers[championIndex]
             for i in range(2, len(pokers), 1):
                 dataOutput += "|" + pokers[i]
+            """
+            dataOutput += "#" + dataPiece[3]
 
             # get actions
             dataOutput += "#" + dataPiece[2] + "#"
