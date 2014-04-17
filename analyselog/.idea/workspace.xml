@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef7c8ada-1057-4fb9-9d60-3c1d71fe3d75" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getsomeonelog.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/annmat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/neuralabtest.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anninput.py" afterPath="$PROJECT_DIR$/anninput.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getspecificoppologfile.py" afterPath="$PROJECT_DIR$/getspecificoppologfile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parselog.py" afterPath="$PROJECT_DIR$/parselog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/splitTrainTest.py" afterPath="$PROJECT_DIR$/splitTrainTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="analyselog.iws" />
@@ -34,7 +37,7 @@
       <file leaf-file-name="parselog.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parselog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="44" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.0" vertical-offset="1780" max-vertical-offset="2793">
+            <state line="72" column="13" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2812">
               <folding />
             </state>
           </provider>
@@ -43,35 +46,12 @@
       <file leaf-file-name="anninput.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anninput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="288" column="7" selection-start="8547" selection-end="8547" vertical-scroll-proportion="0.456" vertical-offset="5244" max-vertical-offset="10488">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getspecificoppologfile.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="10" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="splitTrainTest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/splitTrainTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="annmat.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/annmat.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <folding />
+            <state line="195" column="18" selection-start="5392" selection-end="5392" vertical-scroll-proportion="0.14258912" vertical-offset="399" max-vertical-offset="7353">
+              <folding>
+                <element signature="e#328#1902#0" expanded="false" />
+                <element signature="e#2081#3848#0" expanded="false" />
+                <element signature="e#3894#5330#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,16 +84,18 @@
         <option value="$PROJECT_DIR$/getlogfile.py" />
         <option value="$PROJECT_DIR$/a" />
         <option value="$PROJECT_DIR$/annmat.py" />
-        <option value="$PROJECT_DIR$/anninput.py" />
         <option value="$PROJECT_DIR$/splitTrainTest.py" />
         <option value="$PROJECT_DIR$/getspecificoppologfile.py" />
+        <option value="$PROJECT_DIR$/getsomeonelog.py" />
         <option value="$PROJECT_DIR$/parselog.py" />
+        <option value="$PROJECT_DIR$/anninput.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1505" />
     <option name="y" value="24" />
-    <option name="width" value="1438" />
+    <option name="width" value="1375" />
     <option name="height" value="846" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -182,25 +164,7 @@
       </PyConsoleSettings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parselog">
-    <configuration default="false" name="neuralabtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="analyselog" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neuralabtest.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.anninput">
     <configuration default="false" name="parselog" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,6 +236,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="analyselog" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/splitTrainTest.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="getsomeonelog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="analyselog" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getsomeonelog.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -418,19 +400,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.getlogfile" />
-      <item index="1" class="java.lang.String" itemvalue="Python.neuralabtest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.parselog" />
-      <item index="3" class="java.lang.String" itemvalue="Python.anninput" />
-      <item index="4" class="java.lang.String" itemvalue="Python.annmat" />
-      <item index="5" class="java.lang.String" itemvalue="Python.splitTrainTest" />
+      <item index="1" class="java.lang.String" itemvalue="Python.parselog" />
+      <item index="2" class="java.lang.String" itemvalue="Python.anninput" />
+      <item index="3" class="java.lang.String" itemvalue="Python.annmat" />
+      <item index="4" class="java.lang.String" itemvalue="Python.splitTrainTest" />
+      <item index="5" class="java.lang.String" itemvalue="Python.getsomeonelog" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.parselog" />
-        <item index="1" class="java.lang.String" itemvalue="Python.splitTrainTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.anninput" />
-        <item index="3" class="java.lang.String" itemvalue="Python.annmat" />
-        <item index="4" class="java.lang.String" itemvalue="Python.neuralabtest" />
+        <item index="0" class="java.lang.String" itemvalue="Python.anninput" />
+        <item index="1" class="java.lang.String" itemvalue="Python.parselog" />
+        <item index="2" class="java.lang.String" itemvalue="Python.getsomeonelog" />
+        <item index="3" class="java.lang.String" itemvalue="Python.splitTrainTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.annmat" />
       </list>
     </recent_temporary>
   </component>
@@ -686,18 +668,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1438" height="846" extended-state="0" />
+    <frame x="1505" y="24" width="1375" height="846" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14508139" sideWeight="0.75609756" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14423077" sideWeight="0.73781294" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2364597" sideWeight="0.89343685" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24390244" sideWeight="0.34932956" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2541209" sideWeight="0.6506704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621871" sideWeight="0.18639053" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2621871" sideWeight="0.8136095" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49964714" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -749,7 +731,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/anninput.py</url>
-          <line>379</line>
+          <line>381</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -757,10 +739,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/annmat.py">
+    <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="73" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="323">
+        <state line="63" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="2831">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getsomeonelog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="207" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="722">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anninput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="22" selection-start="5877" selection-end="5877" vertical-scroll-proportion="0.0" vertical-offset="4047" max-vertical-offset="7277">
+          <folding>
+            <element signature="e#328#1902#0" expanded="false" />
+            <element signature="e#2081#3848#0" expanded="false" />
+            <element signature="e#3894#5330#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -774,22 +774,17 @@
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="29" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="10488">
-          <folding />
+          <folding>
+            <element signature="e#328#1902#0" expanded="false" />
+            <element signature="e#2081#3848#0" expanded="false" />
+            <element signature="e#3894#5330#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/splitTrainTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="589">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annmat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="73" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="323">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parselog.py">
@@ -802,7 +797,11 @@
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1501">
-          <folding />
+          <folding>
+            <element signature="e#328#1902#0" expanded="false" />
+            <element signature="e#2081#3848#0" expanded="false" />
+            <element signature="e#3894#5330#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -818,48 +817,38 @@
         <state line="1142" column="0" selection-start="47510" selection-end="47588" vertical-scroll-proportion="0.33173078" vertical-offset="20306" max-vertical-offset="27968" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="406" selection-end="406" vertical-scroll-proportion="0.37931034" vertical-offset="0" max-vertical-offset="950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neuralabtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="428" selection-end="428" vertical-scroll-proportion="0.59574467" vertical-offset="120" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parselog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="44" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.0" vertical-offset="1780" max-vertical-offset="2793">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getspecificoppologfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-          <folding />
-        </state>
+        <state line="32" column="13" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="722" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/splitTrainTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+        <state line="13" column="19" selection-start="379" selection-end="379" vertical-scroll-proportion="0.45825604" vertical-offset="0" max-vertical-offset="608" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getsomeonelog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="207" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/annmat.py">
+    <entry file="file://$PROJECT_DIR$/parselog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="72" column="13" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2812">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/anninput.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="288" column="7" selection-start="8547" selection-end="8547" vertical-scroll-proportion="0.456" vertical-offset="5244" max-vertical-offset="10488">
-          <folding />
+        <state line="195" column="18" selection-start="5392" selection-end="5392" vertical-scroll-proportion="0.14258912" vertical-offset="399" max-vertical-offset="7353">
+          <folding>
+            <element signature="e#328#1902#0" expanded="false" />
+            <element signature="e#2081#3848#0" expanded="false" />
+            <element signature="e#3894#5330#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

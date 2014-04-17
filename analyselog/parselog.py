@@ -6,8 +6,8 @@ import os, shutil
 import string
 
 # settings
-LogFolder = "/home/lijingpeng/Public/tmp/"
-OutputFile = "/home/lijingpeng/Public/fat/annout.txt"
+LogFolder = "/home/lijingpeng/Public/ann/anndata/2pl2012_song_marv/"
+OutputFile = "/home/lijingpeng/Public/ann/anndata/2pl2012_song_marv_1.txt"
 Champion = "marv"
 
 # store all filename
@@ -25,8 +25,9 @@ for logfile in logFiles:
     fread = open( LogFolder + logfile )
     lineCount = 0
     dataLine = fread.readline()
-    while dataLine and lineCount < 3000:
-        if dataLine[0] != "#":
+    while dataLine:
+        if dataLine[0] != "#" and dataLine[1] != "C":
+            #print dataLine
             lineCount += 1
             dataOutput += str(lineCount) + "#"
             # main process here
@@ -45,7 +46,7 @@ for logfile in logFiles:
             championIndex = 0
             championName = dataPiece[5].split("|")
             if championName[0] == Champion:
-                championIndex = 0
+                championIndex = 0 # zero for big blind
             else:
                 championIndex = 1
             # store the champion, small blind or big blind
@@ -60,7 +61,7 @@ for logfile in logFiles:
 
             # get all the pokers into pokers
             # Tc6d|Ks5h/QsTs2s/9s/Ah
-            """
+
             pokers_a = dataPiece[3].split("|")
             strTmp = pokers_a[1]
             pokers_b = strTmp.split("/")
@@ -68,8 +69,8 @@ for logfile in logFiles:
             dataOutput += "#" + pokers[championIndex]
             for i in range(2, len(pokers), 1):
                 dataOutput += "|" + pokers[i]
-            """
-            dataOutput += "#" + dataPiece[3]
+
+            #dataOutput += "#" + dataPiece[3]
 
             # get actions
             dataOutput += "#" + dataPiece[2] + "#"

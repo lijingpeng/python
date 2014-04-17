@@ -2,8 +2,8 @@ __author__ = 'lijingpeng'
 
 # Generate ann input
 # Global data
-dataFile = "/home/lijingpeng/Public/annout.txt"
-annDataFile = "/home/lijingpeng/Public/ann.txt"
+dataFile = "/home/lijingpeng/Public/ann/anndata/2pl2012_song_marv_1.txt"
+annDataFile = "/home/lijingpeng/Public/ann/anndata/ann_2pl2012_song_marv.txt"
 spliter = ","
 raiseLabel = 3
 callLabel = 2
@@ -294,6 +294,7 @@ while dataLine:
                 else:
                     dataOutput += str(1) + "\n"
 
+                print dataOutput
                 fileWriter.write(dataOutput)
                 #print dataOutput
         RA_CA = GetRaiseCallCount(actionSet[0], 0, 0)
@@ -353,6 +354,7 @@ while dataLine:
                 else:
                     dataOutput += str(1) + "\n"
                 #dataOutput += list(actionSet[0])[i] + "\n"
+                print dataOutput
                 fileWriter.write(dataOutput)
                 #print dataOutput
         pass
@@ -440,6 +442,7 @@ while dataLine:
                     else:
                         dataOutput += str(1) + "\n"
                     #dataOutput += list(actionSet[round])[i] + "\n"
+                    print dataOutput
                     fileWriter.write(dataOutput)
                     #print dataOutput
                 pass
@@ -522,6 +525,7 @@ while dataLine:
                     else:
                         dataOutput += str(1) + "\n"
                     #dataOutput += list(actionSet[round])[i] + "\n"
+                    print dataOutput
                     fileWriter.write(dataOutput)
                     #print dataOutput
                 pass
