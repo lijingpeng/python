@@ -1,0 +1,7 @@
+2014-06-22 14:04:02,952 - log.py:15 - tst - first info message
+2014-06-22 14:04:02,952 - log.py:16 - tst - first debug message
+2014-06-22 14:21:02,231 - main - DEBUG - test
+2014-06-22 14:23:17,408 - logconf.py:6 - main - DEBUG - test
+2014-06-22 14:26:01,638 - logconf.py:6 - main - DEBUG: test
+2014-06-22 14:48:51,513 - logconf.py:6 - main - DEBUG: test
+2014-06-22 14:48:51,513 - logconf.py:7 - main - INFO: info
