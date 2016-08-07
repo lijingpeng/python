@@ -1,8 +1,6 @@
-python
-======
+Python Script
+---
 
-Something about Python
+一些Python小段代码，有些可能比较旧了
 
-DIP/ Digital image processing
 
-example/ Basic usage of Python
